@@ -1,0 +1,28 @@
+{
+  "name": "vgc-download",
+  "version": "0.1.0",
+  "description": "A Claude Code plugin for competitive Pokemon VGC team building, matchup analysis, and meta research.",
+  "type": "module",
+  "bin": {
+    "vgc-download": "./bin/cli.mjs"
+  },
+  "files": [
+    "bin/",
+    "skills/",
+    "agents/",
+    "mcp-server/"
+  ],
+  "keywords": [
+    "claude",
+    "claude-code",
+    "pokemon",
+    "vgc",
+    "competitive"
+  ],
+  "author": "Hagen Fritz",
+  "license": "MIT",
+  "repository": "https://github.com/HagenFritz/vgc-download",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
