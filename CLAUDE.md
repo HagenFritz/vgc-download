@@ -33,7 +33,23 @@ data/             Team files, meta snapshots, regulations
 
 ## Data
 
-- `data/config.json` — Points to the current regulation (`current_regulation`)
+- `data/config.json` — Points to the current regulation (`current_regulation`) and current meta snapshot (`current_meta`)
 - `data/regulations/` — One JSON file per regulation set (e.g., `reg_m-a.json`). See `data/regulation_template.json` for the schema.
 - `data/my_team.json` — Current team roster
-- `data/meta_snapshot.json` — Latest pulled usage/meta data
+
+### Stats Pipeline
+
+Raw usage data goes in, gets filtered against the current regulation and legal items, and produces a processed meta snapshot.
+
+```
+data/stats/
+├── raw/                        # Raw source files (Smogon chaos JSON, etc.)
+│   ├── reg_i_chaos.json        # Paste raw data here
+│   └── reg_m-a_chaos.json      # Future: actual M-A ladder data
+├── items/
+│   └── champions_items.json    # Legal items for the current game
+└── processed/                  # Filtered output — what skills actually read
+    └── reg_m-a_meta.json       # Built from raw + regulation + items
+```
+
+The processing script reads one or more raw files, filters Pokemon to the target regulation's `allowed_pokemon`, filters items to `champions_items.json`, and writes to `processed/`. When a new regulation drops, point the script at the best available raw data and the new regulation file.
