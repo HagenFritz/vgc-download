@@ -1,0 +1,10 @@
+[project]
+name = "vgc-download"
+version = "0.1.0"
+description = "A Claude Code plugin for competitive Pokemon VGC team building, matchup analysis, and meta research."
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "httpx>=0.28.1",
+    "mcp>=1.27.0",
+]

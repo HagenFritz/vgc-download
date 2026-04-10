@@ -1,0 +1,10 @@
+{
+  "name": "vgc-download",
+  "version": "0.1.0",
+  "description": "A Claude Code plugin for competitive Pokemon VGC team building, matchup analysis, and meta research.",
+  "author": {
+    "name": "Hagen Fritz"
+  },
+  "repository": "https://github.com/HagenFritz/vgc-download",
+  "license": "MIT"
+}
