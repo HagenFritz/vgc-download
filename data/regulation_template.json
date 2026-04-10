@@ -1,0 +1,21 @@
+{
+  "regulation": "",
+  "regulation_id": "",
+  "game": "",
+  "start_date": "YYYY-MM-DD",
+  "end_date": "YYYY-MM-DD",
+  "team_size": { "min": 4, "max": 6 },
+  "level_rules": "",
+  "your_time": "",
+  "team_preview": "",
+  "turn_time": "",
+  "restrictions": "",
+  "allowed_pokemon": [],
+  "restricted_pokemon": [],
+  "banned_pokemon": [],
+  "banned_items": [],
+  "banned_moves": [],
+  "notes": "",
+  "source_url": "",
+  "parsed_date": "YYYY-MM-DD"
+}
