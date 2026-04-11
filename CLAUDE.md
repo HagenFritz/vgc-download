@@ -36,6 +36,10 @@ data/             Team files, meta snapshots, regulations
 - `data/config.json` — Points to the current regulation (`current_regulation`) and current meta snapshot (`current_meta`)
 - `data/regulations/` — One JSON file per regulation set (e.g., `reg_m-a.json`). See `data/regulation_template.json` for the schema.
 - `data/my_team.json` — Current team roster
+- `data/pokemon_db/pokedex.json` — Full Pokemon database (base stats, types, abilities) fetched from PokeAPI. Run `scripts/fetch_pokemon_db.py` to update.
+- `data/pokemon_db/<regulation_id>_pokemon.json` — Regulation-filtered subset of the pokedex. Run `scripts/filter_pokemon_db.py <regulation_id>` to generate.
+- `data/meta/<YYYY-MM-DD>_<regulation_id>_report.md` — Meta scouting reports written by the Meta Scout agent. Dated to preserve history.
+- `data/teams/drafts/<YYYY-MM-DD>_<regulation_id>_tr_team.md` — Team drafts written by the TR Architect agent. User promotes a draft to `data/my_team.json` when ready.
 
 ### Stats Pipeline
 
