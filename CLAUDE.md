@@ -36,6 +36,10 @@ data/             Team files, meta snapshots, regulations
 - `data/config.json` — Points to the current regulation (`current_regulation`) and current meta snapshot (`current_meta`)
 - `data/regulations/` — One JSON file per regulation set (e.g., `reg_m-a.json`). See `data/regulation_template.json` for the schema.
 - `data/my_team.json` — Current team roster
+- `data/pokemon_db/pokedex.json` — Full Pokemon database (base stats, types, abilities) fetched from PokeAPI. Run `scripts/fetch_pokemon_db.py` to refresh.
+- `data/pokemon_db/<regulation_id>_pokemon.json` — Regulation-filtered subset. Run `scripts/filter_pokemon_db.py <regulation_id>` to generate.
+- `data/meta/<YYYY-MM-DD>_<regulation_id>_report.md` — Meta scouting reports from the Meta Scout agent. Dated to preserve history.
+- `data/teams/drafts/<YYYY-MM-DD>_<regulation_id>_tr_team.md` — Team drafts from the TR Architect agent. Promote a draft to `data/my_team.json` when ready.
 
 ### Stats Pipeline
 
@@ -53,3 +57,16 @@ data/stats/
 ```
 
 The processing script reads one or more raw files, filters Pokemon to the target regulation's `allowed_pokemon`, filters items to `champions_items.json`, and writes to `processed/`. When a new regulation drops, point the script at the best available raw data and the new regulation file.
+
+## Agents
+
+Two coaching subagents live in `agents/coaching/`:
+
+- **Meta Scout** — Reads processed stats + regulation data, searches the web for community sentiment, writes dated scouting reports to `data/meta/`. Triggered by "scout the meta" or "analyze the metagame."
+- **TR Architect** — Reads a meta report + regulation + Pokemon database, searches the web for TR-specific builds, writes Showdown-pasteable team drafts to `data/teams/drafts/`. Triggered by "build a TR team" or "draft a trick room team."
+
+Both agents are loaded with companion skills (`vgc:meta-analysis-guide`, `vgc:tr-theory`) that provide methodology, templates, and competitive reference material. These skills are not user-invocable.
+
+## Web Search Convention
+
+The current game is **Pokemon Champions**. Always include `"Pokemon Champions"` in web search queries to avoid pulling results from older games (Scarlet & Violet, Sword & Shield, etc.).
