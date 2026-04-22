@@ -1,0 +1,2496 @@
+{
+  "info": {
+    "metagame": "championstournaments",
+    "cutoff": 0,
+    "cutoff deviation": 0,
+    "team type": null,
+    "number of battles": 100000,
+    "source": "pikalytics.com",
+    "source_url": "https://www.pikalytics.com/ai/pokedex/championstournaments",
+    "license": "CC BY-NC 4.0"
+  },
+  "data": {
+    "Incineroar": {
+      "Raw count": 51180,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "intimidate": 50255,
+        "blaze": 908,
+        "intimidaci": 17
+      },
+      "Items": {
+        "sitrusberry": 28273,
+        "chopleberry": 8763,
+        "shucaberry": 6122,
+        "leftovers": 2136,
+        "lumberry": 2052,
+        "passhoberry": 1312,
+        "whiteherb": 673,
+        "blackglasses": 303,
+        "charcoal": 269,
+        "quickclaw": 269
+      },
+      "Spreads": {},
+      "Moves": {
+        "fakeout": 50692,
+        "partingshot": 49044,
+        "flareblitz": 44368,
+        "throatchop": 22168,
+        "darkestlariat": 19779,
+        "protect": 6559,
+        "willowisp": 2859,
+        "helpinghand": 2338,
+        "taunt": 2002,
+        "snarl": 1480
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Sneasler": 20536,
+        "Sinistcha": 19056,
+        "Garchomp": 18568,
+        "Floette-Eternal": 11924,
+        "Basculegion": 11807,
+        "Charizard": 10983
+      },
+      "Checks and Counters": {},
+      "usage": 0.5118
+    },
+    "Sneasler": {
+      "Raw count": 48350,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "unburden": 43406,
+        "poisontouch": 3801,
+        "pressure": 1127,
+        "technician": 17
+      },
+      "Items": {
+        "whiteherb": 36141,
+        "focussash": 10141,
+        "mentalherb": 1346,
+        "sitrusberry": 202,
+        "blackbelt": 67,
+        "poisonbarb": 50,
+        "focusband": 50,
+        "brightpowder": 50,
+        "choicescarf": 34,
+        "lumberry": 34
+      },
+      "Spreads": {},
+      "Moves": {
+        "closecombat": 48148,
+        "direclaw": 47324,
+        "fakeout": 43204,
+        "protect": 37435,
+        "coaching": 7097,
+        "rocktomb": 2893,
+        "rockslide": 2119,
+        "throatchop": 1463,
+        "gunkshot": 572,
+        "taunt": 504
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Incineroar": 20534,
+        "Garchomp": 19777,
+        "Kingambit": 18381,
+        "Basculegion": 14329,
+        "Sinistcha": 13572,
+        "Charizard": 10427
+      },
+      "Checks and Counters": {},
+      "usage": 0.48350000000000004
+    },
+    "Garchomp": {
+      "Raw count": 38650,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "roughskin": 35068,
+        "sandveil": 3448,
+        "sandforce": 135
+      },
+      "Items": {
+        "choicescarf": 10260,
+        "whiteherb": 6341,
+        "softsand": 6021,
+        "lumberry": 3229,
+        "habanberry": 3179,
+        "sitrusberry": 1934,
+        "yacheberry": 1598,
+        "garchompite": 1345,
+        "focussash": 1043,
+        "brightpowder": 1043
+      },
+      "Spreads": {},
+      "Moves": {
+        "earthquake": 34765,
+        "dragonclaw": 33066,
+        "rockslide": 29702,
+        "protect": 27264,
+        "stompingtantrum": 17626,
+        "swordsdance": 1934,
+        "stoneedge": 1884,
+        "poisonjab": 1615,
+        "ironhead": 1514,
+        "bulldoze": 1329
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Sneasler": 19779,
+        "Incineroar": 18568,
+        "Charizard": 12631,
+        "Rotom-Wash": 11084,
+        "Kingambit": 10747,
+        "Floette-Eternal": 9217
+      },
+      "Checks and Counters": {},
+      "usage": 0.3865
+    },
+    "Sinistcha": {
+      "Raw count": 31110,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "hospitality": 30757,
+        "heatproof": 353
+      },
+      "Items": {
+        "sitrusberry": 17472,
+        "leftovers": 4423,
+        "occaberry": 2354,
+        "mentalherb": 1581,
+        "colburberry": 1362,
+        "kasibberry": 908,
+        "cobaberry": 673,
+        "brightpowder": 639,
+        "focussash": 589,
+        "quickclaw": 336
+      },
+      "Spreads": {},
+      "Moves": {
+        "matchagotcha": 30841,
+        "ragepowder": 30404,
+        "trickroom": 21138,
+        "lifedew": 17270,
+        "protect": 10561,
+        "strengthsap": 8173,
+        "shadowball": 4086,
+        "imprison": 757,
+        "calmmind": 286,
+        "scald": 236
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Incineroar": 19053,
+        "Sneasler": 13571,
+        "Floette-Eternal": 8173,
+        "Tyranitar": 7937,
+        "Kingambit": 7517,
+        "Basculegion": 7013
+      },
+      "Checks and Counters": {},
+      "usage": 0.3111
+    },
+    "Kingambit": {
+      "Raw count": 28740,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "defiant": 28135,
+        "supremeoverlord": 572,
+        "pressure": 17,
+        "defiantlevel": 17
+      },
+      "Items": {
+        "blackglasses": 17641,
+        "chopleberry": 8694,
+        "focussash": 504,
+        "lumberry": 437,
+        "leftovers": 202,
+        "dreadplate": 185,
+        "sitrusberry": 185,
+        "occaberry": 135,
+        "blackbelt": 135,
+        "quickclaw": 101
+      },
+      "Spreads": {},
+      "Moves": {
+        "suckerpunch": 28538,
+        "protect": 26386,
+        "kowtowcleave": 25663,
+        "ironhead": 17035,
+        "swordsdance": 9232,
+        "lowkick": 6996,
+        "assurance": 404,
+        "brickbreak": 320,
+        "irondefense": 51,
+        "lowsweep": 51
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Sneasler": 18381,
+        "Garchomp": 10746,
+        "Incineroar": 10056,
+        "Basculegion": 8560,
+        "Sinistcha": 7517,
+        "Floette-Eternal": 6088
+      },
+      "Checks and Counters": {},
+      "usage": 0.2874
+    },
+    "Basculegion": {
+      "Raw count": 25280,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "adaptability": 19124,
+        "swiftswim": 6106,
+        "adapdability": 17,
+        "swiftswin": 17,
+        "moldbreaker": 17
+      },
+      "Items": {
+        "choicescarf": 17257,
+        "mysticwater": 5298,
+        "sitrusberry": 1127,
+        "focussash": 1009,
+        "spelltag": 134,
+        "whiteherb": 134,
+        "lumberry": 84,
+        "leftovers": 51,
+        "lifeorb": 34,
+        "colburberry": 34
+      },
+      "Spreads": {},
+      "Moves": {
+        "lastrespects": 24725,
+        "wavecrash": 23632,
+        "aquajet": 22101,
+        "flipturn": 18720,
+        "protect": 6762,
+        "liquidation": 1245,
+        "icywind": 925,
+        "psychicfangs": 505,
+        "shadowball": 370,
+        "icefang": 320
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Sneasler": 14330,
+        "Incineroar": 11808,
+        "Pelipper": 9688,
+        "Kingambit": 8561,
+        "Archaludon": 7115,
+        "Sinistcha": 7014
+      },
+      "Checks and Counters": {},
+      "usage": 0.2528
+    },
+    "Floette-Eternal": {
+      "Raw count": 19160,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "flowerveil": 13760,
+        "fairyaura": 5181,
+        "symbiosis": 151,
+        "regenerator": 50,
+        "flowerveilfairyaura": 17
+      },
+      "Items": {
+        "floettite": 18975,
+        "choicescarf": 101,
+        "floetitte": 84
+      },
+      "Spreads": {},
+      "Moves": {
+        "protect": 18891,
+        "dazzlinggleam": 16889,
+        "calmmind": 16149,
+        "moonblast": 15627,
+        "drainingkiss": 4676,
+        "lightofruin": 3062,
+        "psychic": 572,
+        "gigadrain": 235,
+        "pollenpuff": 101,
+        "petaldance": 67
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Incineroar": 11927,
+        "Sneasler": 10194,
+        "Garchomp": 9218,
+        "Sinistcha": 8175,
+        "Aerodactyl": 6964,
+        "Kingambit": 6089
+      },
+      "Checks and Counters": {},
+      "usage": 0.1916
+    },
+    "Charizard": {
+      "Raw count": 18060,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "blaze": 7903,
+        "solarpower": 6894,
+        "drought": 2859,
+        "toughclaws": 404
+      },
+      "Items": {
+        "charizarditey": 16664,
+        "charizarditex": 1194,
+        "charcoal": 84,
+        "choicescarf": 34,
+        "chartiberry": 17,
+        "lifeorb": 17,
+        "lumberry": 17,
+        "leftovers": 17,
+        "king": 17
+      },
+      "Spreads": {},
+      "Moves": {
+        "protect": 17556,
+        "heatwave": 16311,
+        "solarbeam": 13621,
+        "weatherball": 8778,
+        "airslash": 4675,
+        "overheat": 3330,
+        "flareblitz": 1244,
+        "dragonclaw": 1127,
+        "dragondance": 1009,
+        "dragonpulse": 958
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Garchomp": 12629,
+        "Incineroar": 10981,
+        "Sneasler": 10426,
+        "Venusaur": 8357,
+        "Whimsicott": 7601,
+        "Kingambit": 4641
+      },
+      "Checks and Counters": {},
+      "usage": 0.18059999999999998
+    },
+    "Rotom-Wash": {
+      "Raw count": 17960,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "levitate": 17960
+      },
+      "Items": {
+        "sitrusberry": 6626,
+        "choicescarf": 5079,
+        "leftovers": 4709,
+        "magnet": 706,
+        "rindoberry": 252,
+        "quickclaw": 168,
+        "lumberry": 118,
+        "mysticwater": 101,
+        "chestoberry": 50,
+        "choicespecs": 34
+      },
+      "Spreads": {},
+      "Moves": {
+        "hydropump": 17624,
+        "thunderbolt": 13150,
+        "willowisp": 10039,
+        "protect": 9905,
+        "voltswitch": 9871,
+        "electroweb": 4978,
+        "trick": 1312,
+        "helpinghand": 1228,
+        "discharge": 1144,
+        "nastyplot": 420
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Garchomp": 11082,
+        "Incineroar": 8845,
+        "Sneasler": 8761,
+        "Floette-Eternal": 4456,
+        "Sinistcha": 4406,
+        "Tyranitar": 4187
+      },
+      "Checks and Counters": {},
+      "usage": 0.1796
+    },
+    "Whimsicott": {
+      "Raw count": 17340,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "prankster": 17239,
+        "chlorophyll": 84,
+        "infiltrator": 17
+      },
+      "Items": {
+        "focussash": 13085,
+        "mentalherb": 1732,
+        "occaberry": 420,
+        "leftovers": 370,
+        "brightpowder": 353,
+        "sitrusberry": 336,
+        "fairyfeather": 286,
+        "kebiaberry": 252,
+        "whiteherb": 118,
+        "covertcloak": 84
+      },
+      "Spreads": {},
+      "Moves": {
+        "tailwind": 17138,
+        "moonblast": 16297,
+        "encore": 12664,
+        "protect": 8393,
+        "sunnyday": 5348,
+        "faketears": 1934,
+        "taunt": 1816,
+        "helpinghand": 1211,
+        "lightscreen": 824,
+        "endeavor": 690
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Incineroar": 9015,
+        "Garchomp": 8628,
+        "Sneasler": 8258,
+        "Charizard": 7602,
+        "Kingambit": 4087,
+        "Rotom-Wash": 2826
+      },
+      "Checks and Counters": {},
+      "usage": 0.1734
+    },
+    "Aerodactyl": {
+      "Raw count": 15810,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "unnerve": 14061,
+        "pressure": 706,
+        "rockhead": 589,
+        "toughclaws": 454
+      },
+      "Items": {
+        "focussash": 12547,
+        "aerodactylite": 2338,
+        "lumberry": 353,
+        "king": 151,
+        "sitrusberry": 84,
+        "whiteherb": 50,
+        "sharpbeak": 50,
+        "choicescarf": 34,
+        "leftovers": 34,
+        "mentalherb": 34
+      },
+      "Spreads": {},
+      "Moves": {
+        "rockslide": 15709,
+        "dualwingbeat": 15087,
+        "protect": 14851,
+        "tailwind": 14801,
+        "wideguard": 1060,
+        "ironhead": 303,
+        "icefang": 219,
+        "earthquake": 185,
+        "taunt": 185,
+        "crunch": 168
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Sneasler": 9284,
+        "Garchomp": 7754,
+        "Incineroar": 7552,
+        "Floette-Eternal": 6963,
+        "Kingambit": 5534,
+        "Sinistcha": 4440
+      },
+      "Checks and Counters": {},
+      "usage": 0.15810000000000002
+    },
+    "Pelipper": {
+      "Raw count": 14950,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "drizzle": 14664,
+        "keeneye": 219,
+        "raindish": 67
+      },
+      "Items": {
+        "focussash": 11133,
+        "choicescarf": 1211,
+        "sitrusberry": 942,
+        "leftovers": 454,
+        "mysticwater": 235,
+        "quickclaw": 219,
+        "sharpbeak": 168,
+        "wacanberry": 118,
+        "lumberry": 101,
+        "mentalherb": 84
+      },
+      "Spreads": {},
+      "Moves": {
+        "hurricane": 14513,
+        "weatherball": 12999,
+        "tailwind": 11772,
+        "protect": 9686,
+        "wideguard": 5112,
+        "muddywater": 1614,
+        "icywind": 1110,
+        "uturn": 1043,
+        "helpinghand": 420,
+        "icebeam": 404
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Basculegion": 9686,
+        "Archaludon": 8778,
+        "Incineroar": 7147,
+        "Sinistcha": 6559,
+        "Sneasler": 6542,
+        "Dragonite": 5247
+      },
+      "Checks and Counters": {},
+      "usage": 0.1495
+    },
+    "Tyranitar": {
+      "Raw count": 13940,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "sandstream": 13906,
+        "unnerve": 34
+      },
+      "Items": {
+        "tyranitarite": 9518,
+        "choicescarf": 1833,
+        "chopleberry": 1143,
+        "lumberry": 303,
+        "leftovers": 286,
+        "focussash": 185,
+        "shucaberry": 168,
+        "sitrusberry": 135,
+        "quickclaw": 84,
+        "whiteherb": 84
+      },
+      "Spreads": {},
+      "Moves": {
+        "rockslide": 13520,
+        "protect": 11451,
+        "knockoff": 10072,
+        "lowkick": 7970,
+        "icepunch": 2758,
+        "crunch": 2253,
+        "dragondance": 2203,
+        "stoneedge": 1194,
+        "earthquake": 925,
+        "highhorsepower": 689
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Sinistcha": 7937,
+        "Incineroar": 7214,
+        "Excadrill": 6642,
+        "Sneasler": 4338,
+        "Rotom-Wash": 4187,
+        "Garchomp": 4036
+      },
+      "Checks and Counters": {},
+      "usage": 0.1394
+    },
+    "Archaludon": {
+      "Raw count": 12210,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "stamina": 8813,
+        "sturdy": 2708,
+        "stalwart": 689
+      },
+      "Items": {
+        "leftovers": 6458,
+        "magnet": 1362,
+        "whiteherb": 1110,
+        "chopleberry": 824,
+        "sitrusberry": 521,
+        "dragonfang": 437,
+        "choicescarf": 437,
+        "shucaberry": 185,
+        "brightpowder": 151,
+        "quickclaw": 151
+      },
+      "Spreads": {},
+      "Moves": {
+        "electroshot": 11167,
+        "flashcannon": 10949,
+        "protect": 9418,
+        "dracometeor": 6996,
+        "dragonpulse": 4221,
+        "aurasphere": 2607,
+        "snarl": 1194,
+        "thunderbolt": 841,
+        "steelbeam": 269,
+        "darkpulse": 219
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Pelipper": 8779,
+        "Basculegion": 7114,
+        "Incineroar": 5600,
+        "Sneasler": 4507,
+        "Sinistcha": 4389,
+        "Dragonite": 3919
+      },
+      "Checks and Counters": {},
+      "usage": 0.12210000000000001
+    },
+    "Dragonite": {
+      "Raw count": 11640,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "multiscale": 8511,
+        "innerfocus": 3129
+      },
+      "Items": {
+        "dragoninite": 7586,
+        "lumberry": 1732,
+        "whiteherb": 488,
+        "dragonfang": 336,
+        "silkscarf": 269,
+        "leftovers": 185,
+        "sitrusberry": 168,
+        "focussash": 118,
+        "dragonitite": 84,
+        "choicescarf": 84
+      },
+      "Spreads": {},
+      "Moves": {
+        "protect": 9336,
+        "hurricane": 6039,
+        "dracometeor": 5114,
+        "extremespeed": 4642,
+        "tailwind": 3768,
+        "dragonpulse": 2691,
+        "thunder": 2153,
+        "scaleshot": 2069,
+        "icebeam": 1413,
+        "dragonclaw": 841
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Sneasler": 6224,
+        "Basculegion": 5938,
+        "Pelipper": 5248,
+        "Incineroar": 4441,
+        "Archaludon": 3919,
+        "Sinistcha": 3902
+      },
+      "Checks and Counters": {},
+      "usage": 0.1164
+    },
+    "Farigiraf": {
+      "Raw count": 11400,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "armortail": 11299,
+        "cudchew": 101
+      },
+      "Items": {
+        "sitrusberry": 5650,
+        "colburberry": 2035,
+        "mentalherb": 1665,
+        "leftovers": 740,
+        "silkscarf": 488,
+        "lumberry": 269,
+        "focussash": 185,
+        "quickclaw": 101,
+        "twistedspoon": 84,
+        "whiteherb": 67
+      },
+      "Spreads": {},
+      "Moves": {
+        "trickroom": 11047,
+        "hypervoice": 8256,
+        "psychic": 7802,
+        "helpinghand": 5498,
+        "protect": 5263,
+        "imprison": 1715,
+        "twinbeam": 1480,
+        "psychicnoise": 790,
+        "dazzlinggleam": 740,
+        "foulplay": 689
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Incineroar": 5717,
+        "Sneasler": 4204,
+        "Kingambit": 3447,
+        "Torkoal": 3447,
+        "Charizard": 2758,
+        "Whimsicott": 2623
+      },
+      "Checks and Counters": {},
+      "usage": 0.114
+    },
+    "Venusaur": {
+      "Raw count": 11370,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "chlorophyll": 10563,
+        "overgrow": 488,
+        "thickfat": 320
+      },
+      "Items": {
+        "focussash": 6492,
+        "venusaurite": 2220,
+        "leftovers": 622,
+        "sitrusberry": 538,
+        "miracleseed": 387,
+        "occaberry": 320,
+        "poisonbarb": 135,
+        "brightpowder": 118,
+        "cobaberry": 118,
+        "scopelens": 67
+      },
+      "Spreads": {},
+      "Moves": {
+        "sludgebomb": 10815,
+        "protect": 9217,
+        "sleeppowder": 8561,
+        "leafstorm": 4003,
+        "earthpower": 3532,
+        "energyball": 3297,
+        "gigadrain": 2220,
+        "leechseed": 1245,
+        "solarbeam": 1144,
+        "weatherball": 555
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Charizard": 8359,
+        "Incineroar": 8275,
+        "Garchomp": 7165,
+        "Sneasler": 5483,
+        "Whimsicott": 2624,
+        "Basculegion": 2119
+      },
+      "Checks and Counters": {},
+      "usage": 0.1137
+    },
+    "Gengar": {
+      "Raw count": 10490,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "cursedbody": 8002,
+        "shadowtag": 2488
+      },
+      "Items": {
+        "gengarite": 9733,
+        "focussash": 538,
+        "choicescarf": 67,
+        "sitrusberry": 34,
+        "quickclaw": 34,
+        "brightpowder": 17,
+        "whiteherb": 17,
+        "shellbell": 17,
+        "leftovers": 17,
+        "meganiumite": 17
+      },
+      "Spreads": {},
+      "Moves": {
+        "shadowball": 10003,
+        "protect": 9885,
+        "sludgebomb": 6069,
+        "perishsong": 5245,
+        "disable": 2908,
+        "substitute": 2286,
+        "icywind": 1698,
+        "sludgewave": 706,
+        "willowisp": 487,
+        "destinybond": 370
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Incineroar": 7447,
+        "Sinistcha": 3463,
+        "Kingambit": 3009,
+        "Politoed": 2757,
+        "Kommo-O": 2757,
+        "Basculegion": 2555
+      },
+      "Checks and Counters": {},
+      "usage": 0.10490000000000001
+    },
+    "Froslass": {
+      "Raw count": 9960,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "cursedbody": 5502,
+        "snowcloak": 2726,
+        "snowwarning": 1733
+      },
+      "Items": {
+        "froslassite": 9809,
+        "focussash": 118,
+        "choiceband": 17,
+        "frosslassite": 17
+      },
+      "Spreads": {},
+      "Moves": {
+        "blizzard": 9775,
+        "protect": 9607,
+        "shadowball": 9573,
+        "auroraveil": 7369,
+        "substitute": 875,
+        "nastyplot": 622,
+        "thunderbolt": 471,
+        "taunt": 437,
+        "icywind": 252,
+        "willowisp": 185
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Sneasler": 6965,
+        "Kingambit": 6074,
+        "Garchomp": 4593,
+        "Incineroar": 3062,
+        "Basculegion": 2254,
+        "Sinistcha": 2204
+      },
+      "Checks and Counters": {},
+      "usage": 0.09960000000000001
+    },
+    "Milotic": {
+      "Raw count": 9120,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "competitive": 8834,
+        "marvelscale": 269,
+        "cutecharm": 17
+      },
+      "Items": {
+        "leftovers": 7000,
+        "sitrusberry": 1144,
+        "mysticwater": 353,
+        "lumberry": 168,
+        "wacanberry": 118,
+        "brightpowder": 84,
+        "rindoberry": 84,
+        "choicescarf": 51,
+        "shellbell": 51,
+        "quickclaw": 34
+      },
+      "Spreads": {},
+      "Moves": {
+        "scald": 8178,
+        "protect": 7757,
+        "icywind": 5250,
+        "icebeam": 4846,
+        "recover": 3921,
+        "lifedew": 2019,
+        "muddywater": 1144,
+        "hypnosis": 707,
+        "coil": 690,
+        "helpinghand": 538
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Garchomp": 4543,
+        "Incineroar": 4493,
+        "Sneasler": 3584,
+        "Charizard": 3214,
+        "Sinistcha": 2591,
+        "Venusaur": 1834
+      },
+      "Checks and Counters": {},
+      "usage": 0.09119999999999999
+    },
+    "Maushold": {
+      "Raw count": 8580,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "friendguard": 8059,
+        "technician": 437,
+        "cheekpouch": 67,
+        "toughclaws": 17
+      },
+      "Items": {
+        "chopleberry": 3937,
+        "focussash": 2406,
+        "sitrusberry": 740,
+        "lumberry": 353,
+        "brightpowder": 219,
+        "king": 185,
+        "mentalherb": 185,
+        "leftovers": 168,
+        "silkscarf": 151,
+        "kingsrock": 50
+      },
+      "Spreads": {},
+      "Moves": {
+        "followme": 8311,
+        "protect": 7756,
+        "superfang": 6864,
+        "taunt": 3937,
+        "helpinghand": 2204,
+        "encore": 1598,
+        "populationbomb": 1295,
+        "feint": 858,
+        "afteryou": 236,
+        "raindance": 185
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Garchomp": 4475,
+        "Floette-Eternal": 3651,
+        "Incineroar": 3348,
+        "Sneasler": 3213,
+        "Kingambit": 2120,
+        "Aerodactyl": 2002
+      },
+      "Checks and Counters": {},
+      "usage": 0.0858
+    },
+    "Corviknight": {
+      "Raw count": 7450,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "mirrorarmor": 6929,
+        "pressure": 353,
+        "unnerve": 168
+      },
+      "Items": {
+        "leftovers": 5499,
+        "sitrusberry": 774,
+        "occaberry": 605,
+        "lumberry": 185,
+        "sharpbeak": 118,
+        "mentalherb": 67,
+        "metalcoat": 50,
+        "focussash": 50,
+        "brightpowder": 50,
+        "focusband": 17
+      },
+      "Spreads": {},
+      "Moves": {
+        "bravebird": 5970,
+        "tailwind": 4406,
+        "bodypress": 4238,
+        "roost": 4019,
+        "bulkup": 3313,
+        "ironhead": 3212,
+        "irondefense": 1900,
+        "protect": 1648,
+        "taunt": 252,
+        "uturn": 135
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Garchomp": 3683,
+        "Tyranitar": 3447,
+        "Incineroar": 3431,
+        "Sinistcha": 3044,
+        "Rotom-Wash": 2573,
+        "Sneasler": 2304
+      },
+      "Checks and Counters": {},
+      "usage": 0.0745
+    },
+    "Excadrill": {
+      "Raw count": 7160,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "sandrush": 6622,
+        "moldbreaker": 336,
+        "sandforce": 202
+      },
+      "Items": {
+        "focussash": 5916,
+        "whiteherb": 336,
+        "excadrite": 303,
+        "choicescarf": 168,
+        "softsand": 118,
+        "king": 50,
+        "shucaberry": 50,
+        "chopleberry": 50,
+        "quickclaw": 34,
+        "sitrusberry": 34
+      },
+      "Spreads": {},
+      "Moves": {
+        "ironhead": 6723,
+        "protect": 6706,
+        "rockslide": 4689,
+        "highhorsepower": 4588,
+        "earthquake": 4404,
+        "swordsdance": 471,
+        "drillrun": 235,
+        "stompingtantrum": 168,
+        "horndrill": 134,
+        "fissure": 101
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Tyranitar": 6639,
+        "Sinistcha": 4202,
+        "Incineroar": 3714,
+        "Rotom-Wash": 2420,
+        "Corviknight": 2000,
+        "Sneasler": 1748
+      },
+      "Checks and Counters": {},
+      "usage": 0.0716
+    },
+    "Delphox": {
+      "Raw count": 7080,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "blaze": 4742,
+        "levitate": 2119,
+        "magician": 219
+      },
+      "Items": {
+        "delphoxite": 7013,
+        "leftovers": 34,
+        "sitrusberry": 17,
+        "choicescarf": 17
+      },
+      "Spreads": {},
+      "Moves": {
+        "heatwave": 6861,
+        "protect": 6845,
+        "psychic": 6155,
+        "substitute": 2691,
+        "encore": 1833,
+        "nastyplot": 959,
+        "psyshock": 790,
+        "dazzlinggleam": 387,
+        "calmmind": 336,
+        "flamethrower": 269
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Sneasler": 4759,
+        "Garchomp": 4457,
+        "Kingambit": 3733,
+        "Floette-Eternal": 2153,
+        "Aerodactyl": 2102,
+        "Basculegion": 2085
+      },
+      "Checks and Counters": {},
+      "usage": 0.0708
+    },
+    "Gardevoir": {
+      "Raw count": 6660,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "telepathy": 2775,
+        "trace": 2758,
+        "pixilate": 639,
+        "synchronize": 454,
+        "sincron": 17,
+        "telepathytopixilatewhenmega": 17
+      },
+      "Items": {
+        "gardevoirite": 4726,
+        "choicescarf": 1615,
+        "sitrusberry": 67,
+        "focussash": 67,
+        "fairyfeather": 50,
+        "quickclaw": 34,
+        "leftovers": 34,
+        "pa": 17,
+        "focusband": 17,
+        "whiteherb": 17
+      },
+      "Spreads": {},
+      "Moves": {
+        "protect": 4709,
+        "hypervoice": 4575,
+        "psychic": 3532,
+        "psyshock": 2640,
+        "trickroom": 2523,
+        "moonblast": 2455,
+        "dazzlinggleam": 1715,
+        "calmmind": 908,
+        "icywind": 875,
+        "aurasphere": 706
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Garchomp": 3801,
+        "Incineroar": 3599,
+        "Sneasler": 2287,
+        "Sinistcha": 1732,
+        "Charizard": 1547,
+        "Milotic": 1547
+      },
+      "Checks and Counters": {},
+      "usage": 0.0666
+    },
+    "Aegislash": {
+      "Raw count": 6580,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "stancechange": 6580
+      },
+      "Items": {
+        "spelltag": 3955,
+        "leftovers": 1144,
+        "focussash": 337,
+        "whiteherb": 236,
+        "sitrusberry": 202,
+        "metalcoat": 151,
+        "colburberry": 151,
+        "occaberry": 101,
+        "kasibberry": 101,
+        "brightpowder": 34
+      },
+      "Spreads": {},
+      "Moves": {
+        "kingsshield": 6328,
+        "shadowsneak": 4359,
+        "poltergeist": 4073,
+        "ironhead": 3786,
+        "shadowball": 1935,
+        "flashcannon": 1683,
+        "sacredsword": 1380,
+        "wideguard": 1363,
+        "closecombat": 421,
+        "substitute": 202
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Garchomp": 3585,
+        "Incineroar": 3080,
+        "Floette-Eternal": 2676,
+        "Rotom-Wash": 2524,
+        "Sneasler": 2221,
+        "Aerodactyl": 1464
+      },
+      "Checks and Counters": {},
+      "usage": 0.0658
+    },
+    "Talonflame": {
+      "Raw count": 6530,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "galewings": 6294,
+        "flamebody": 219,
+        "glalewings": 17
+      },
+      "Items": {
+        "sharpbeak": 2844,
+        "focussash": 1212,
+        "none": 505,
+        "noitem": 286,
+        "chartiberry": 202,
+        "lumberry": 135,
+        "charcoal": 118,
+        "brightpowder": 101,
+        "leftovers": 101
+      },
+      "Spreads": {},
+      "Moves": {
+        "tailwind": 6496,
+        "protect": 4864,
+        "flareblitz": 4123,
+        "bravebird": 2676,
+        "dualwingbeat": 2070,
+        "willowisp": 1986,
+        "acrobatics": 1532,
+        "taunt": 505,
+        "upperhand": 404,
+        "quickguard": 404
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Garchomp": 4460,
+        "Sneasler": 2625,
+        "Floette-Eternal": 2171,
+        "Rotom-Wash": 2121,
+        "Maushold": 1599,
+        "Kingambit": 1498
+      },
+      "Checks and Counters": {},
+      "usage": 0.0653
+    },
+    "Kommo-O": {
+      "Raw count": 6160,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "soundproof": 3316,
+        "overcoat": 2440,
+        "bulletproof": 387,
+        "bulletproff": 17
+      },
+      "Items": {
+        "leftovers": 4275,
+        "dragonfang": 1044,
+        "habanberry": 303,
+        "sitrusberry": 252,
+        "roseliberry": 84,
+        "whiteherb": 51,
+        "blackbelt": 34,
+        "leftover": 17,
+        "shellbell": 17,
+        "cobaberry": 17
+      },
+      "Spreads": {},
+      "Moves": {
+        "protect": 6059,
+        "clangingscales": 5554,
+        "clangoroussoul": 5167,
+        "aurasphere": 5167,
+        "flamethrower": 606,
+        "bodypress": 589,
+        "irondefense": 589,
+        "dracometeor": 353,
+        "vacuumwave": 252,
+        "flashcannon": 118
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Incineroar": 4662,
+        "Sinistcha": 3181,
+        "Gengar": 2760,
+        "Kingambit": 2070,
+        "Tyranitar": 1734,
+        "Sneasler": 1212
+      },
+      "Checks and Counters": {},
+      "usage": 0.0616
+    },
+    "Meganium": {
+      "Raw count": 5430,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "overgrow": 2707,
+        "leafguard": 1765,
+        "megasol": 958
+      },
+      "Items": {
+        "meganiumite": 5312,
+        "meganiumita": 67,
+        "leftovers": 34,
+        "sitrusberry": 17
+      },
+      "Spreads": {},
+      "Moves": {
+        "solarbeam": 5380,
+        "dazzlinggleam": 5027,
+        "protect": 4825,
+        "weatherball": 4724,
+        "synthesis": 740,
+        "earthpower": 689,
+        "gigadrain": 67,
+        "healpulse": 34,
+        "substitute": 34,
+        "ingrain": 17
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Sneasler": 2471,
+        "Basculegion": 2454,
+        "Pelipper": 2438,
+        "Archaludon": 2354,
+        "Incineroar": 1698,
+        "Aerodactyl": 1412
+      },
+      "Checks and Counters": {},
+      "usage": 0.054299999999999994
+    },
+    "Primarina": {
+      "Raw count": 5230,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "liquidvoice": 5011,
+        "torrent": 219
+      },
+      "Items": {
+        "leftovers": 2287,
+        "mysticwater": 1463,
+        "sitrusberry": 656,
+        "fairyfeather": 336,
+        "quickclaw": 151,
+        "lumberry": 84,
+        "kebiaberry": 50,
+        "safetygoggles": 34,
+        "focussash": 34,
+        "rindoberry": 34
+      },
+      "Spreads": {},
+      "Moves": {
+        "hypervoice": 5062,
+        "protect": 4944,
+        "moonblast": 4894,
+        "calmmind": 2253,
+        "dazzlinggleam": 521,
+        "icywind": 454,
+        "haze": 420,
+        "icebeam": 387,
+        "weatherball": 353,
+        "hydropump": 168
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Sneasler": 2607,
+        "Incineroar": 2523,
+        "Kingambit": 2018,
+        "Garchomp": 1514,
+        "Sinistcha": 1463,
+        "Froslass": 1379
+      },
+      "Checks and Counters": {},
+      "usage": 0.052300000000000006
+    },
+    "Torkoal": {
+      "Raw count": 4690,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "drought": 4640,
+        "whitesmoke": 34,
+        "solarpower": 17
+      },
+      "Items": {
+        "charcoal": 4337,
+        "leftovers": 118,
+        "quickclaw": 84,
+        "sitrusberry": 50,
+        "focussash": 34,
+        "king": 17,
+        "whiteherb": 17,
+        "quentonacharcoal": 17,
+        "choicescarf": 17
+      },
+      "Spreads": {},
+      "Moves": {
+        "eruption": 4539,
+        "protect": 4421,
+        "heatwave": 2959,
+        "weatherball": 2320,
+        "earthpower": 2219,
+        "helpinghand": 487,
+        "solarbeam": 487,
+        "overheat": 353,
+        "flamethrower": 219,
+        "yawn": 219
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Farigiraf": 3446,
+        "Incineroar": 2875,
+        "Venusaur": 1765,
+        "Golurk": 1479,
+        "Sneasler": 1378,
+        "Kingambit": 1076
+      },
+      "Checks and Counters": {},
+      "usage": 0.046900000000000004
+    },
+    "Palafin": {
+      "Raw count": 4590,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "zerotohero": 4590
+      },
+      "Items": {
+        "mysticwater": 3615,
+        "choicescarf": 521,
+        "leftovers": 185,
+        "lumberry": 134,
+        "sitrusberry": 101,
+        "blackbelt": 17,
+        "mysteryberry": 17
+      },
+      "Spreads": {},
+      "Moves": {
+        "jetpunch": 4439,
+        "wavecrash": 4321,
+        "protect": 3548,
+        "closecombat": 2572,
+        "flipturn": 1849,
+        "icepunch": 504,
+        "bulkup": 286,
+        "drainpunch": 269,
+        "haze": 235,
+        "taunt": 50
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Incineroar": 2724,
+        "Sinistcha": 2287,
+        "Sneasler": 1412,
+        "Kingambit": 1362,
+        "Gengar": 1278,
+        "Froslass": 1143
+      },
+      "Checks and Counters": {},
+      "usage": 0.045899999999999996
+    },
+    "Politoed": {
+      "Raw count": 4560,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "drizzle": 4358,
+        "waterabsorb": 202
+      },
+      "Items": {
+        "leftovers": 2288,
+        "sitrusberry": 1481,
+        "mysticwater": 370,
+        "quickclaw": 101,
+        "mentalherb": 67,
+        "wacanberry": 67,
+        "brightpowder": 50,
+        "choicescarf": 34,
+        "focussash": 34,
+        "rindoberry": 34
+      },
+      "Spreads": {},
+      "Moves": {
+        "protect": 4324,
+        "weatherball": 3820,
+        "perishsong": 2743,
+        "encore": 2053,
+        "icywind": 1262,
+        "helpinghand": 1127,
+        "muddywater": 1060,
+        "icebeam": 909,
+        "raindance": 202,
+        "earthpower": 202
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Incineroar": 3096,
+        "Gengar": 2760,
+        "Basculegion": 1716,
+        "Archaludon": 1699,
+        "Sinistcha": 1615,
+        "Sneasler": 1060
+      },
+      "Checks and Counters": {},
+      "usage": 0.045599999999999995
+    },
+    "Glimmora": {
+      "Raw count": 4040,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "toxicdebris": 3468,
+        "adaptability": 471,
+        "corrosion": 67,
+        "levitate": 34
+      },
+      "Items": {
+        "glimmoranite": 3485,
+        "focussash": 370,
+        "glimmorite": 84,
+        "sitrusberry": 34,
+        "leftovers": 34,
+        "choicescarf": 17,
+        "shucaberry": 17
+      },
+      "Spreads": {},
+      "Moves": {
+        "powergem": 3905,
+        "spikyshield": 3552,
+        "sludgebomb": 3552,
+        "earthpower": 3367,
+        "sludgewave": 556,
+        "protect": 404,
+        "mortalspin": 252,
+        "substitute": 202,
+        "energyball": 101,
+        "stealthrock": 84
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Incineroar": 1683,
+        "Whimsicott": 1313,
+        "Basculegion": 1145,
+        "Garchomp": 1060,
+        "Sneasler": 1010,
+        "Sinistcha": 943
+      },
+      "Checks and Counters": {},
+      "usage": 0.0404
+    },
+    "Ninetales-Alola": {
+      "Raw count": 3800,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "snowwarning": 3598,
+        "snowcloak": 202
+      },
+      "Items": {
+        "focussash": 2186,
+        "nevermeltice": 572,
+        "occaberry": 269,
+        "choicescarf": 235,
+        "mentalherb": 135,
+        "leftovers": 84,
+        "sitrusberry": 84,
+        "babiriberry": 67,
+        "kebiaberry": 34,
+        "whiteherb": 34
+      },
+      "Spreads": {},
+      "Moves": {
+        "blizzard": 3531,
+        "protect": 2976,
+        "auroraveil": 2673,
+        "freezedry": 1311,
+        "encore": 1278,
+        "moonblast": 1278,
+        "icywind": 1177,
+        "disable": 286,
+        "dazzlinggleam": 269,
+        "helpinghand": 135
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Incineroar": 1917,
+        "Sneasler": 1631,
+        "Sinistcha": 1177,
+        "Garchomp": 958,
+        "Kingambit": 908,
+        "Rotom-Wash": 858
+      },
+      "Checks and Counters": {},
+      "usage": 0.038
+    },
+    "Clefable": {
+      "Raw count": 3770,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "unaware": 3080,
+        "magicguard": 454,
+        "cutecharm": 202,
+        "magicbounce": 34
+      },
+      "Items": {
+        "sitrusberry": 2407,
+        "leftovers": 404,
+        "clefablite": 387,
+        "mentalherb": 101,
+        "brightpowder": 101,
+        "kebiaberry": 84,
+        "lumberry": 84,
+        "babiriberry": 50,
+        "focussash": 50,
+        "colburberry": 34
+      },
+      "Spreads": {},
+      "Moves": {
+        "followme": 3686,
+        "moonblast": 3417,
+        "protect": 3147,
+        "helpinghand": 2390,
+        "lifedew": 606,
+        "thunderwave": 438,
+        "icywind": 337,
+        "dazzlinggleam": 168,
+        "encore": 135,
+        "moonlight": 118
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Kingambit": 2289,
+        "Sneasler": 2222,
+        "Basculegion": 1683,
+        "Delphox": 1481,
+        "Dragonite": 1094,
+        "Garchomp": 1010
+      },
+      "Checks and Counters": {},
+      "usage": 0.0377
+    },
+    "Scizor": {
+      "Raw count": 3720,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "technician": 3518,
+        "lightmetal": 101,
+        "swarm": 101
+      },
+      "Items": {
+        "scizorite": 2862,
+        "metalcoat": 404,
+        "sitrusberry": 135,
+        "whiteherb": 84,
+        "occaberry": 50,
+        "focussash": 50,
+        "brightpowder": 34,
+        "leftovers": 34,
+        "quickclaw": 34,
+        "lumberry": 17
+      },
+      "Spreads": {},
+      "Moves": {
+        "bulletpunch": 3720,
+        "protect": 3417,
+        "swordsdance": 2609,
+        "bugbite": 2357,
+        "closecombat": 943,
+        "dualwingbeat": 555,
+        "uturn": 438,
+        "knockoff": 219,
+        "assurance": 168,
+        "xscissor": 84
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Incineroar": 1969,
+        "Sneasler": 1683,
+        "Sinistcha": 1616,
+        "Basculegion": 1532,
+        "Pelipper": 1111,
+        "Aerodactyl": 707
+      },
+      "Checks and Counters": {},
+      "usage": 0.037200000000000004
+    },
+    "Kangaskhan": {
+      "Raw count": 3680,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "scrappy": 2487,
+        "innerfocus": 857,
+        "parentalbond": 269,
+        "earlybird": 67
+      },
+      "Items": {
+        "kangaskhanite": 3562,
+        "silkscarf": 101,
+        "spelltag": 17
+      },
+      "Spreads": {},
+      "Moves": {
+        "fakeout": 3411,
+        "doubleedge": 2974,
+        "suckerpunch": 2941,
+        "drainpunch": 1932,
+        "lowkick": 1159,
+        "protect": 706,
+        "bodyslam": 504,
+        "crunch": 185,
+        "icepunch": 134,
+        "bite": 134
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Sneasler": 1277,
+        "Aerodactyl": 1243,
+        "Incineroar": 1243,
+        "Basculegion": 1143,
+        "Sinistcha": 1042,
+        "Garchomp": 874
+      },
+      "Checks and Counters": {},
+      "usage": 0.0368
+    },
+    "Sylveon": {
+      "Raw count": 3670,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "pixilate": 3535,
+        "cutecharm": 135
+      },
+      "Items": {
+        "fairyfeather": 2795,
+        "leftovers": 354,
+        "sitrusberry": 202,
+        "choicescarf": 84,
+        "focussash": 84,
+        "quickclaw": 84,
+        "kebiaberry": 17,
+        "shellbell": 17,
+        "silkscarf": 17,
+        "ribbondashfairyfeather": 17
+      },
+      "Spreads": {},
+      "Moves": {
+        "hypervoice": 3620,
+        "protect": 2643,
+        "quickattack": 1650,
+        "hyperbeam": 1195,
+        "calmmind": 976,
+        "shadowball": 808,
+        "moonblast": 758,
+        "detect": 606,
+        "yawn": 589,
+        "helpinghand": 572
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Incineroar": 1700,
+        "Sneasler": 1077,
+        "Garchomp": 1010,
+        "Sinistcha": 859,
+        "Farigiraf": 690,
+        "Tyranitar": 606
+      },
+      "Checks and Counters": {},
+      "usage": 0.036699999999999997
+    },
+    "Gyarados": {
+      "Raw count": 3580,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "intimidate": 3362,
+        "moldbreaker": 151,
+        "moxie": 67
+      },
+      "Items": {
+        "gyaradosite": 1193,
+        "leftovers": 622,
+        "sitrusberry": 605,
+        "lumberry": 487,
+        "wacanberry": 168,
+        "mysticwater": 134,
+        "quickclaw": 84,
+        "focussash": 84,
+        "whiteherb": 50,
+        "king": 34
+      },
+      "Spreads": {},
+      "Moves": {
+        "waterfall": 3530,
+        "protect": 2622,
+        "thunderwave": 1580,
+        "taunt": 1546,
+        "dragondance": 1361,
+        "crunch": 1160,
+        "icefang": 773,
+        "helpinghand": 353,
+        "earthquake": 353,
+        "icywind": 202
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Garchomp": 1614,
+        "Sneasler": 1345,
+        "Sinistcha": 1277,
+        "Tyranitar": 1177,
+        "Incineroar": 790,
+        "Excadrill": 756
+      },
+      "Checks and Counters": {},
+      "usage": 0.0358
+    },
+    "Dragapult": {
+      "Raw count": 3500,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "clearbody": 2810,
+        "infiltrator": 606,
+        "cursedbody": 84
+      },
+      "Items": {
+        "focussash": 959,
+        "dragonfang": 808,
+        "lumberry": 286,
+        "choicescarf": 236,
+        "colburberry": 236,
+        "whiteherb": 202,
+        "kasibberry": 202,
+        "spelltag": 151,
+        "leftovers": 50,
+        "focusband": 50
+      },
+      "Spreads": {},
+      "Moves": {
+        "dragondarts": 2373,
+        "phantomforce": 2255,
+        "protect": 2103,
+        "willowisp": 1245,
+        "shadowball": 959,
+        "uturn": 942,
+        "dracometeor": 858,
+        "psychicfangs": 656,
+        "outrage": 353,
+        "suckerpunch": 320
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Sneasler": 1716,
+        "Incineroar": 1296,
+        "Kingambit": 909,
+        "Tyranitar": 841,
+        "Rotom-Wash": 774,
+        "Whimsicott": 740
+      },
+      "Checks and Counters": {},
+      "usage": 0.035
+    },
+    "Arcanine-Hisui": {
+      "Raw count": 3330,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "intimidate": 2960,
+        "rockhead": 370
+      },
+      "Items": {
+        "focussash": 875,
+        "choicescarf": 538,
+        "whiteherb": 437,
+        "shucaberry": 370,
+        "sitrusberry": 303,
+        "lumberry": 252,
+        "chopleberry": 219,
+        "hardstone": 101,
+        "passhoberry": 50,
+        "leftovers": 50
+      },
+      "Spreads": {},
+      "Moves": {
+        "flareblitz": 3313,
+        "rockslide": 3095,
+        "protect": 2573,
+        "extremespeed": 2523,
+        "headsmash": 589,
+        "howl": 320,
+        "closecombat": 303,
+        "wildcharge": 219,
+        "willowisp": 101,
+        "snarl": 101
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Sneasler": 2136,
+        "Froslass": 2102,
+        "Kingambit": 1900,
+        "Sinistcha": 1329,
+        "Palafin": 790,
+        "Whimsicott": 555
+      },
+      "Checks and Counters": {},
+      "usage": 0.0333
+    },
+    "Rotom-Heat": {
+      "Raw count": 2710,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "levitate": 2710
+      },
+      "Items": {
+        "choicescarf": 842,
+        "sitrusberry": 555,
+        "leftovers": 387,
+        "passhoberry": 286,
+        "magnet": 236,
+        "lumberry": 202,
+        "whiteherb": 118,
+        "quickclaw": 17,
+        "loadeddice": 17,
+        "mentalherb": 17
+      },
+      "Spreads": {},
+      "Moves": {
+        "overheat": 2643,
+        "thunderbolt": 1936,
+        "voltswitch": 1784,
+        "protect": 1683,
+        "willowisp": 976,
+        "electroweb": 673,
+        "trick": 421,
+        "discharge": 303,
+        "eerieimpulse": 101,
+        "helpinghand": 101
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Sneasler": 1128,
+        "Sinistcha": 993,
+        "Tyranitar": 993,
+        "Garchomp": 825,
+        "Kingambit": 825,
+        "Excadrill": 724
+      },
+      "Checks and Counters": {},
+      "usage": 0.0271
+    },
+    "Typhlosion-Hisui": {
+      "Raw count": 2520,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "blaze": 1327,
+        "frisk": 1193
+      },
+      "Items": {
+        "choicescarf": 2234,
+        "charcoal": 235,
+        "choicespecs": 34,
+        "spelltag": 17
+      },
+      "Spreads": {},
+      "Moves": {
+        "eruption": 2470,
+        "shadowball": 2302,
+        "heatwave": 2167,
+        "overheat": 1344,
+        "focusblast": 454,
+        "protect": 336,
+        "infernalparade": 252,
+        "solarbeam": 185,
+        "extrasensory": 151,
+        "flamethrower": 118
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Whimsicott": 1159,
+        "Sneasler": 1025,
+        "Incineroar": 823,
+        "Aerodactyl": 706,
+        "Garchomp": 689,
+        "Charizard": 622
+      },
+      "Checks and Counters": {},
+      "usage": 0.0252
+    },
+    "Golurk": {
+      "Raw count": 2340,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "ironfist": 1801,
+        "noguard": 438,
+        "unseenfist": 101
+      },
+      "Items": {
+        "golurkite": 2256,
+        "blackbelt": 34,
+        "meganiumite": 34,
+        "spelltag": 17
+      },
+      "Spreads": {},
+      "Moves": {
+        "protect": 2087,
+        "headlongrush": 1919,
+        "poltergeist": 1835,
+        "icepunch": 1364,
+        "drainpunch": 421,
+        "earthquake": 236,
+        "thunderpunch": 236,
+        "highhorsepower": 185,
+        "knockoff": 168,
+        "rockslide": 152
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Farigiraf": 1869,
+        "Incineroar": 1650,
+        "Torkoal": 1481,
+        "Sneasler": 1027,
+        "Venusaur": 892,
+        "Sinistcha": 572
+      },
+      "Checks and Counters": {},
+      "usage": 0.023399999999999997
+    },
+    "Volcarona": {
+      "Raw count": 2220,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "flamebody": 2220
+      },
+      "Items": {
+        "sitrusberry": 824,
+        "leftovers": 589,
+        "chartiberry": 219,
+        "passhoberry": 219,
+        "focussash": 84,
+        "lumberry": 67,
+        "brightpowder": 50,
+        "whiteherb": 34,
+        "cobaberry": 34,
+        "charcoal": 34
+      },
+      "Spreads": {},
+      "Moves": {
+        "protect": 1396,
+        "ragepowder": 1312,
+        "heatwave": 1144,
+        "quiverdance": 891,
+        "tailwind": 757,
+        "gigadrain": 690,
+        "strugglebug": 622,
+        "fierydance": 538,
+        "overheat": 471,
+        "bugbuzz": 437
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Sneasler": 706,
+        "Garchomp": 673,
+        "Incineroar": 572,
+        "Basculegion": 521,
+        "Sinistcha": 488,
+        "Rotom-Wash": 488
+      },
+      "Checks and Counters": {},
+      "usage": 0.0222
+    },
+    "Aggron": {
+      "Raw count": 2200,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "sturdy": 1075,
+        "heavymetal": 521,
+        "filter": 504,
+        "rockhead": 101
+      },
+      "Items": {
+        "aggronite": 2082,
+        "leftovers": 67,
+        "brightpowder": 17,
+        "tonytoneladaaggronitite": 17,
+        "shellbell": 17
+      },
+      "Spreads": {},
+      "Moves": {
+        "heavyslam": 2015,
+        "protect": 2015,
+        "bodypress": 1998,
+        "irondefense": 1831,
+        "ironhead": 185,
+        "rockslide": 168,
+        "earthquake": 101,
+        "stoneedge": 84,
+        "stealthrock": 50,
+        "metalburst": 34
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Sinistcha": 1663,
+        "Incineroar": 1377,
+        "Sneasler": 840,
+        "Tyranitar": 689,
+        "Pelipper": 588,
+        "Basculegion": 571
+      },
+      "Checks and Counters": {},
+      "usage": 0.022000000000000002
+    },
+    "Starmie": {
+      "Raw count": 2020,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "naturalcure": 1549,
+        "hugepower": 185,
+        "illuminate": 152,
+        "analytic": 118,
+        "purepower": 17
+      },
+      "Items": {
+        "starminite": 1953,
+        "starmite": 50,
+        "sitrusberry": 17
+      },
+      "Spreads": {},
+      "Moves": {
+        "liquidation": 1852,
+        "protect": 1734,
+        "aquajet": 960,
+        "psychocut": 960,
+        "zenheadbutt": 791,
+        "icespinner": 741,
+        "flipturn": 269,
+        "substitute": 219,
+        "skillswap": 168,
+        "waterfall": 84
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Sneasler": 1313,
+        "Pelipper": 1145,
+        "Sinistcha": 1060,
+        "Kingambit": 976,
+        "Incineroar": 656,
+        "Archaludon": 606
+      },
+      "Checks and Counters": {},
+      "usage": 0.0202
+    },
+    "Hydreigon": {
+      "Raw count": 1970,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "levitate": 1970
+      },
+      "Items": {
+        "choicescarf": 606,
+        "scopelens": 253,
+        "whiteherb": 202,
+        "chopleberry": 202,
+        "sitrusberry": 135,
+        "focussash": 101,
+        "blackglasses": 101,
+        "lumberry": 84,
+        "quickclaw": 67,
+        "leftovers": 67
+      },
+      "Spreads": {},
+      "Moves": {
+        "darkpulse": 1802,
+        "dracometeor": 1717,
+        "protect": 993,
+        "earthpower": 640,
+        "snarl": 556,
+        "tailwind": 455,
+        "heatwave": 303,
+        "flamethrower": 303,
+        "focusenergy": 253,
+        "flashcannon": 185
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Incineroar": 707,
+        "Sneasler": 640,
+        "Whimsicott": 387,
+        "Charizard": 320,
+        "Aegislash": 320,
+        "Sinistcha": 286
+      },
+      "Checks and Counters": {},
+      "usage": 0.0197
+    },
+    "Sableye": {
+      "Raw count": 1900,
+      "Viability Ceiling": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "Abilities": {
+        "prankster": 1816,
+        "magicbounce": 34,
+        "keeneye": 34,
+        "stall": 17
+      },
+      "Items": {
+        "mentalherb": 488,
+        "roseliberry": 471,
+        "sitrusberry": 319,
+        "focussash": 235,
+        "leftovers": 118,
+        "sablenite": 101,
+        "lumberry": 50,
+        "blackglasses": 50,
+        "whiteherb": 34,
+        "focusband": 17
+      },
+      "Spreads": {},
+      "Moves": {
+        "encore": 992,
+        "disable": 773,
+        "fakeout": 723,
+        "foulplay": 706,
+        "raindance": 639,
+        "lightscreen": 639,
+        "reflect": 471,
+        "willowisp": 420,
+        "quash": 370,
+        "protect": 370
+      },
+      "Tera Types": {},
+      "Happiness": {},
+      "Teammates": {
+        "Basculegion": 588,
+        "Incineroar": 555,
+        "Sneasler": 538,
+        "Pelipper": 521,
+        "Archaludon": 420,
+        "Garchomp": 370
+      },
+      "Checks and Counters": {},
+      "usage": 0.019
+    }
+  }
+}
