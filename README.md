@@ -13,14 +13,27 @@ VGC Download turns raw usage data and regulation info into actionable competitiv
 
 ## Install
 
+### From a local clone
+
+```bash
+git clone https://github.com/HagenFritz/vgc-download.git
+cd vgc-download
+node bin/cli.mjs install
+```
+
+### Via npx (once published)
+
 ```bash
 npx vgc-download install
 ```
 
-This copies skills and agents to `~/.claude/`, and registers the MCP server in `~/.claude/mcp.json`. Restart Claude Code after installing.
+The install script copies skills and agents into `~/.claude/skills/` and `~/.claude/agents/`, and registers the MCP server in `~/.claude/mcp.json`. **Restart Claude Code after installing** for the skills to appear.
+
+### Uninstall
 
 ```bash
-npx vgc-download uninstall
+node bin/cli.mjs uninstall
+# or: npx vgc-download uninstall
 ```
 
 ## Skills
@@ -28,15 +41,36 @@ npx vgc-download uninstall
 | Skill | Description |
 |-------|-------------|
 | `/vgc:parse-regulation <url>` | Parse a Serebii regulation page into `data/regulations/` |
+| `/vgc:scout-meta` | Scout the metagame — spawns Meta Scout agent to analyze stats, search the web, and write a scouting report |
+| `/vgc:build-tr-team` | Build a Trick Room team — spawns TR Architect agent to draft a Showdown-pasteable team |
 
 ## Agents
 
-| Agent | Trigger | What It Does |
-|-------|---------|--------------|
-| **Meta Scout** | "scout the meta", "analyze the metagame" | Reads processed stats + regulation data, searches the web for community sentiment, writes a dated scouting report to `data/meta/` |
-| **TR Architect** | "build a TR team", "draft a trick room team" | Reads a meta report + regulation + Pokemon database, searches the web for TR builds, writes a Showdown-pasteable team draft to `data/teams/drafts/` |
+Skills orchestrate specialized agents. Agents are focused specialists; skills wire them together.
 
-Both agents are loaded with companion skills containing competitive reference material (meta analysis methodology, TR team-building theory sourced from VGCGuide, Smogon, and Nugget Bridge).
+**Scout-meta** (`/vgc:scout-meta`) spawns four analysts in parallel:
+
+| Agent | Role |
+|-------|------|
+| **usage-analyst** | Quantitative stats — top threats, sets, teammates, speed tiers |
+| **archetype-analyst** | Cores, dominant archetypes, speed control landscape |
+| **community-scout** | Tournament results, tier lists, rising tech (web) |
+| **exploit-finder** | Shared weaknesses, structural gaps, anti-meta picks |
+
+The skill then synthesizes their outputs into a dated report at `data/meta/`.
+
+**Build-tr-team** (`/vgc:build-tr-team`) uses a builder + parallel critics pattern:
+
+| Agent | Role |
+|-------|------|
+| **tr-architect** | Drafts the initial team (Showdown paste + roster breakdown + bring-4s). Called again to revise if critics flag critical issues. |
+| **meta-coverage-checker** | Evaluates the draft against the scouting report — what does this team lose to? |
+| **tr-viability-checker** | Runs the 8 TR composition checks (Taunt / Imprison / Fake Out answers, Plan B, type coverage, spread moves, item diversity) |
+| **speed-math-auditor** | Audits EV totals, IVs, natures, and verifies underspeed benchmarks |
+
+The skill fires the three critics in parallel, synthesizes severity-ranked findings, re-spawns `tr-architect` once if there are critical issues, and writes the final draft to `data/teams/drafts/`.
+
+Skills contain methodology and competitive reference material (meta analysis methodology, TR team-building theory sourced from VGCGuide, Smogon, and Nugget Bridge).
 
 ## Scripts
 
@@ -84,8 +118,8 @@ data/
 
 ### When you want to build a team
 
-1. Ask Claude to "scout the meta" — Meta Scout writes a report
-2. Ask Claude to "build me a TR team" — TR Architect reads the report and builds a team
+1. `/vgc:scout-meta` — Meta Scout writes a scouting report
+2. `/vgc:build-tr-team` — TR Architect reads the report and builds a team
 3. Test the team on [Pokemon Showdown](https://play.pokemonshowdown.com/)
 4. Iterate
 

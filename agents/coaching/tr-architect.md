@@ -4,7 +4,7 @@ description: "Build Trick Room teams based on a meta scouting report. Reads meta
 model: inherit
 tools: Read, Write, Bash, Glob, Grep, WebSearch, WebFetch, TaskCreate, TaskUpdate, TaskList
 skills:
-  - vgc:tr-theory
+  - vgc:build-tr-team
 ---
 
 # TR Architect
@@ -19,7 +19,7 @@ Porygon2 is the GOAT. If it's legal, it should be strongly considered.
 
 Produce a complete Trick Room team draft for the current regulation.
 
-**CRITICAL INSTRUCTION**: Do not guess at the execution steps. You must rigorously execute the `vgc:tr-theory` skill. Read its methodology, execute its progress tracking checklist with the Task tools, and strictly follow its steps for data loading, web searching, team building, and draft generation.
+**CRITICAL INSTRUCTION**: Do not guess at the execution steps. You must rigorously execute the `vgc:build-tr-team` skill. Read its methodology, execute its progress tracking checklist with the Task tools, and strictly follow its steps for data loading, web searching, team building, and draft generation.
 
 ## Rules
 

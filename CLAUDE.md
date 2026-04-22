@@ -60,12 +60,21 @@ The processing script reads one or more raw files, filters Pokemon to the target
 
 ## Agents
 
-Two coaching subagents live in `agents/coaching/`:
+Coaching subagents live in `agents/coaching/`. Each is a focused specialist; skills orchestrate them.
 
-- **Meta Scout** — Reads processed stats + regulation data, searches the web for community sentiment, writes dated scouting reports to `data/meta/`. Triggered by "scout the meta" or "analyze the metagame."
-- **TR Architect** — Reads a meta report + regulation + Pokemon database, searches the web for TR-specific builds, writes Showdown-pasteable team drafts to `data/teams/drafts/`. Triggered by "build a TR team" or "draft a trick room team."
+**Scout-meta pipeline** (spawned in parallel by `/vgc:scout-meta`):
+- **usage-analyst** — Quantitative stats readout: top threats, sets, teammates, speed tiers.
+- **archetype-analyst** — Synthesizes stats into dominant cores, archetypes, and speed control structure.
+- **community-scout** — Web research for tournament results, tier lists, rising tech, and community sentiment.
+- **exploit-finder** — Cross-references top threats for shared weaknesses and anti-meta picks.
 
-Both agents are loaded with companion skills (`vgc:meta-analysis-guide`, `vgc:tr-theory`) that provide methodology, templates, and competitive reference material. These skills are not user-invocable.
+**Build-tr-team pipeline** (builder → parallel critics → revise, spawned by `/vgc:build-tr-team`):
+- **tr-architect** — Reads a meta report + regulation + Pokemon DB, searches the web for TR builds, produces the initial team draft. Also called a second time to revise if critics flag critical issues.
+- **meta-coverage-checker** — Evaluates the draft against the scouting report's top threats and archetypes. Flags what the team loses to.
+- **tr-viability-checker** — Runs the 8 TR composition checks (Taunt answer, Imprison answer, Plan B, type coverage, spread moves, etc.).
+- **speed-math-auditor** — Audits EV totals, IVs, natures, and verifies underspeed benchmarks.
+
+Skills are the orchestrators — they load context, spawn agents (in parallel where possible), and synthesize outputs. Agents don't know about each other; the skill is the only place findings merge.
 
 ## Web Search Convention
 
