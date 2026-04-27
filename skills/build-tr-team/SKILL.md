@@ -39,6 +39,7 @@ Identify the meta scouting report:
 Also gather paths for the agents:
 - `data/regulations/<current_regulation>.json` — allowed Pokemon list
 - `data/pokemon_db/<current_regulation>_pokemon.json` — base stats, types, abilities
+- `data/stats/items/champions_items.json` — legal Champions items list (117 items). Pass this path to all agents.
 
 ### Step 2: Spawn tr-architect for Initial Draft
 
@@ -52,10 +53,12 @@ Task vgc-download:coaching:tr-architect(
   Meta report: <path to scouting report>
   Regulation file: data/regulations/<current_regulation>.json
   Pokemon DB: data/pokemon_db/<current_regulation>_pokemon.json
+  Legal items: data/stats/items/champions_items.json
 
   Requirements:
   - 6 Pokemon, all from regulation's allowed_pokemon list
   - Showdown paste format (item, ability, level 50, EVs, nature, IVs, 4 moves)
+  - Every item must appear in data/stats/items/champions_items.json by exact name — load the file before assigning any items
   - Roster breakdown: role, why this pick, key interactions, EV rationale per Pokemon
   - Win conditions: primary, secondary, anti-meta
   - Bring-4 guidelines for 3-4 common matchups
@@ -89,15 +92,16 @@ Task vgc-download:coaching:meta-coverage-checker(
 )
 
 Task vgc-download:coaching:tr-viability-checker(
-  Run the 8 TR composition checks on this draft team.
+  Run the 9 TR composition checks on this draft team.
 
   Regulation file: data/regulations/<current_regulation>.json
   Pokemon DB: data/pokemon_db/<current_regulation>_pokemon.json
+  Legal items: data/stats/items/champions_items.json
 
   Draft team:
   <paste the full tr-architect output here>
 
-  Return a structured markdown checklist with pass/fail for each of the 8 checks (TR Setup, Plan B, Taunt answer, Imprison answer, Type coverage, Fake Out answer, Spread moves, Item diversity) plus a Summary Panel with critical failures and weak points.
+  Return a structured markdown checklist with pass/fail for each of the 9 checks (TR Setup, Plan B, Taunt answer, Imprison answer, Type coverage, Fake Out answer, Spread moves, Item diversity, Item legality) plus a Summary Panel with critical failures and weak points. Any check failure is a 🔴 CRITICAL.
 )
 
 Task vgc-download:coaching:speed-math-auditor(
@@ -119,7 +123,7 @@ Wait for all three to complete before proceeding.
 
 Consolidate all findings into a severity-ranked list:
 
-- **🔴 CRITICAL** — team autoloses to a top meta threat, has no Taunt/Imprison/Fake Out answer, all 6 Pokemon are slow (no Plan B), 3+ stacked type weaknesses, duplicate items, or EV math errors that make a set illegal
+- **🔴 CRITICAL** — team autoloses to a top meta threat, has no Taunt/Imprison/Fake Out answer, all 6 Pokemon are slow (no Plan B), 3+ stacked type weaknesses, duplicate items, illegal items (not in champions_items.json), or EV math errors that make a set illegal
 - **🟡 IMPORTANT** — uncomfortable matchups, weak Plan B, missing spread move coverage, suboptimal EV benchmarks (underspeed margin too tight)
 - **🔵 POLISH** — spread refinements, item reshuffles, cosmetic improvements
 
