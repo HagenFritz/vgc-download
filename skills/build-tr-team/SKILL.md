@@ -1,7 +1,7 @@
 ---
 name: vgc:build-tr-team
 description: "Build a Trick Room team for the current VGC regulation. Spawns tr-architect to draft a team, then fires three parallel critics (meta coverage, TR viability, speed math) and revises if needed. Use when the user says 'build a TR team', 'draft a trick room team', or 'build me a team'."
-argument-hint: "[meta report path]"
+argument-hint: "[archetype preference]"
 ---
 
 # Build a Trick Room Team
@@ -41,6 +41,9 @@ Also gather paths for the agents:
 - `data/pokemon_db/<current_regulation>_pokemon.json` — base stats, types, abilities
 - `data/stats/items/champions_items.json` — legal Champions items list (117 items). Pass this path to all agents.
 
+**Capture the archetype argument (if provided):**
+If the user supplied an archetype preference argument (e.g., `"Oranguru setter + Mega Golurk abuser"`), capture it as `<user_archetype_preference>`. If no argument was given, `<user_archetype_preference>` is absent — omit the `User Archetype Preference:` field from all Task prompts below.
+
 ### Step 2: Spawn tr-architect for Initial Draft
 
 Fire the builder. Pass the meta report path and all data paths as context.
@@ -54,6 +57,7 @@ Task vgc-download:coaching:tr-architect(
   Regulation file: data/regulations/<current_regulation>.json
   Pokemon DB: data/pokemon_db/<current_regulation>_pokemon.json
   Legal items: data/stats/items/champions_items.json
+  User Archetype Preference: <user_archetype_preference>  ← include this line only when provided; omit entirely if absent
 
   Requirements:
   - 6 Pokemon, all from regulation's allowed_pokemon list
@@ -151,6 +155,7 @@ Task vgc-download:coaching:tr-architect(
   - Still 6 Pokemon from the regulation's allowed_pokemon list
   - Preserve win conditions and strategic identity where possible
   - Every pick and set change must address a specific finding
+  - User-specified picks (from archetype preference, if any) are soft preferences — work around them (adjust teammates, items, EV spreads, bring-4 guidelines) rather than replacing them. Surface their known weaknesses in the Threats and Weaknesses section explicitly.
 
   Return the revised team in the same Showdown paste + roster breakdown + win conditions format.
 )
@@ -185,6 +190,7 @@ Confirm to the user with:
 - Top 3 win conditions
 - Headline matchup (best and worst)
 - Whether revision was triggered
+- User-specified picks vs. architect picks (only when `<user_archetype_preference>` was provided)
 
 ## Rules
 

@@ -30,3 +30,14 @@ Produce a complete Trick Room team draft for the current regulation.
 - **Trick Room is the identity, not the crutch.** The best TR teams can also win without TR. Always include a Plan B.
 - **Cross-reference the allowed list.** Every Pokemon on the team must be in the regulation's `allowed_pokemon`. Check before writing.
 - **Items must be Champions-legal.** Load `data/stats/items/champions_items.json` and verify every item by exact name match before finalizing any set. Common illegal items: Life Orb, Assault Vest, Flame Orb, Toxic Orb, Choice Band, Choice Specs, Eviolite, Rocky Helmet, Weakness Policy. If your first-choice item is illegal, substitute: type booster (Twisted Spoon, Black Belt, Charcoal, etc.) for Life Orb; type-resist berry or Leftovers for Assault Vest; rethink the ability combo entirely for Flame Orb/Toxic Orb.
+
+## User Archetype Preference
+
+When the Task prompt includes a `User Archetype Preference:` field:
+
+- **Treat it as a strong preference.** Build the team around the specified Pokemon and roles. The user wants these picks — don't second-guess the strategic choice.
+- **Verify legality first.** Before committing to any pinned pick, confirm it appears in the regulation's `allowed_pokemon`. If it does not appear, note the conflict in your draft and choose the closest legal alternative.
+- **Fill the remaining slots** to complement the pinned picks — cover their type weaknesses, provide their missing support (redirection, speed control, spread damage), and complete the TR core.
+- **Document pinned picks** in the `## User Constraints` section of the team draft (immediately after `## Strategy Summary`). List which Pokemon were user-specified vs. architect-chosen, and include the exact preference string.
+- **Surface weaknesses honestly.** If a pinned pick has a meta-unfriendly matchup or structural weakness, note it in `## Threats and Weaknesses`. Do not hide it. The user chose the pick deliberately — they deserve to know the tradeoff.
+- **During revision pass:** Work *around* pinned picks. Adjust teammates, items, EV spreads, and bring-4 guidelines to compensate for flagged weaknesses. Do not replace pinned picks — that's not your call.
