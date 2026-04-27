@@ -70,15 +70,14 @@ For each TR abuser, spot-check:
 
 For setters, spot-check:
 - HP + defensive split (252 HP / Def / SpD optimized for meta threats)
-- If running Eviolite, verify the Pokemon is NFE (not fully evolved)
 
 ### 4. Nature / Ability / Item Combo Sanity
-Flag illegal or clearly-wrong combos:
-- Magic Guard + Life Orb on non-special attacker (Life Orb is strong but wrong fit)
+Flag speed-relevant item interactions and clearly-wrong combos:
+- **Choice Scarf** is legal in Champions but counterproductive on TR abusers — it multiplies speed, making them faster under TR. Flag as 🔴 CRITICAL if found on a dedicated abuser.
 - Choice item with Trick Room (your slow Choice user can't switch moves for 4 turns → usually bad)
-- Weakness Policy on a Pokemon that can't survive the hit to activate it
 - Mega Stone on a Pokemon that can't Mega (wrong species/form)
-- Eviolite on a fully-evolved Pokemon (illegal effect)
+
+**Item scope note:** This agent checks only speed-relevant item interactions. Full item legality (verifying every item against `data/stats/items/champions_items.json`) is tr-viability-checker's Check 9. Do not assert "no illegal items" or "no illegal combos" unless you have explicitly loaded and checked that file.
 
 ### 5. Summary Panel
 | Pokemon | EV OK | Spe OK | Role Fit | Benchmark Issues |

@@ -32,15 +32,15 @@ Community consensus: Semi-TR generally has superior tournament viability because
 
 **Cresselia** — Called "the absolute ruler of Trick Room" by Smogon. 120/120/130 defenses, Levitate immunity to Earthquake, huge movepool (Helping Hand, Icy Wind, Psyshock, Lunar Dance). Can set TR 2-3 times per game. Weakness: low offensive pressure, vulnerable to Taunt.
 
-**Dusclops** — Eviolite creates absurd bulk. Ghost typing is immune to Fake Out and Normal-type attacks. Will-O-Wisp cripples physical attackers. Weakness: dead weight if Taunted; Knock Off removes Eviolite.
+**Dusclops** — Exceptional bulk with Leftovers recovery. Ghost typing is immune to Fake Out and Normal-type attacks. Will-O-Wisp cripples physical attackers. Weakness: dead weight if Taunted.
 
-**Porygon2** — Eviolite bulk + Download boosts Attack or SpA based on opponent's lower defense. Recover enables late-game re-setting. Tri Attack provides neutral coverage with 20% status chance. The GOAT if legal.
+**Porygon2** — High natural bulk + Download boosts Attack or SpA based on opponent's lower defense. Recover enables late-game re-setting. Tri Attack provides neutral coverage with 20% status chance. Run Leftovers. The GOAT if legal.
 
 ### Offensive Setters
 
 **Hatterene** — Magic Bounce is the strongest anti-Taunt ability — reflects Taunt back. High Special Attack. Pairs extremely well with Indeedee-F (Psychic Terrain blocks Fake Out on both sides).
 
-**Reuniclus** — 125 Special Attack + Magic Guard (no Life Orb recoil, no weather/status chip). Base 30 Speed is ideal for TR.
+**Reuniclus** — 125 Special Attack + Magic Guard (no weather/status chip). Base 30 Speed is ideal for TR. Run Twisted Spoon for boosted Psychic damage or Leftovers for longevity.
 
 **Chandelure** — High SpA, Ghost-typing (Fake Out immune), access to Imprison + Trick Room to block opposing TR. Use Focus Sash.
 
@@ -55,7 +55,7 @@ Community consensus: Semi-TR generally has superior tournament viability because
 | Item | Use Case |
 |------|----------|
 | Mental Herb | Cures Taunt on first use. The premier anti-Taunt tech. |
-| Eviolite | +50% Def/SpD for NFE Pokemon (Porygon2, Dusclops). Best bulk item. |
+| Leftovers | Passive recovery for bulky setters. HP divisible by 16 is optimal. |
 | Safety Goggles | Blocks Rage Powder redirection and Spore. |
 | Focus Sash | Guarantees survival from full HP. Best on offensive/frail setters. |
 | Kasib/Colbur Berry | Halves super-effective Dark or Ghost damage once. |
@@ -68,7 +68,7 @@ Community consensus: Semi-TR generally has superior tournament viability because
 
 **Conkeldurr** — Drain Punch recovery, Mach Punch priority for out-of-TR play, Iron Fist or Guts. Fire Punch coverage.
 
-**Hariyama** — Fake Out for early game + Guts with Flame Orb for massive Close Combat. Doubles as support AND abuser.
+**Hariyama** — Fake Out for early game pressure, then slow physical damage. Iron Fist boosts Bullet Punch and Ice Punch coverage. Guts is available but has no legal activation item in Champions (Flame Orb is not in the legal item list) — run Thick Fat instead for Fire/Ice resistance. Doubles as support AND abuser.
 
 **Escavalier** — 135 Atk, 20 Speed. Overcoat blocks Spore and Rage Powder.
 
@@ -151,9 +151,9 @@ Top players don't use generic 252/252 spreads. They:
 - Diminishing returns: 20 EVs in a low base stat has proportionally larger impact than in a high base stat.
 
 ### HP Optimization
-- **Life Orb**: Recoil is 10% max HP rounded down. HP ending in 9 takes 1 less recoil.
 - **Sitrus Berry**: Heals 25% max HP. HP divisible by 4 gives clean recovery.
 - **Leftovers**: Heals 1/16 max HP. HP divisible by 16 is optimal.
+- **Note:** Life Orb is not in the Champions legal item list. Use type boosters (Twisted Spoon, Black Belt, Charcoal, etc.) for offensive boosts without recoil.
 
 ### Setter EV Philosophy
 Maximize bulk to guarantee TR setup. Typical: 252 HP / split Def-SpD based on meta threats. Offensive stat is tertiary. Exception: offensive setters like Hatterene who max SpA and rely on Focus Sash or Magic Bounce.
@@ -203,7 +203,7 @@ Opponent targets setter with both Pokemon to KO before TR goes up (TR has -7 pri
 
 **Answers:**
 - Redirection (forces both attacks onto redirector)
-- Bulk investment (Eviolite, defensive EVs survive the double-up)
+- Bulk investment (defensive EVs, Leftovers recovery survive the double-up)
 - Focus Sash (guarantees survival from full HP)
 
 ### Opposing Trick Room
@@ -249,7 +249,7 @@ Protect is the most-used move in VGC. In Doubles, your partner still attacks whi
 4. **Threat preservation**: Keep a key attacker alive one more turn.
 5. **Turn stalling**: Wait out temporary effects.
 
-**Guideline:** 4 of 6 team members should run Protect. Exceptions: Choice item holders, Assault Vest users, extremely bulky setters with recovery.
+**Guideline:** 4 of 6 team members should run Protect. Exceptions: Choice Scarf holders, extremely bulky setters with recovery moves (they can afford the turn to use Recover instead).
 
 ## Intimidate Awareness
 
