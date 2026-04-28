@@ -38,6 +38,11 @@ data/             Team files, meta snapshots, regulations
 - `data/my_team.json` — Current team roster
 - `data/pokemon_db/pokedex.json` — Full Pokemon database (base stats, types, abilities) fetched from PokeAPI. Run `scripts/fetch_pokemon_db.py` to refresh.
 - `data/pokemon_db/<regulation_id>_pokemon.json` — Regulation-filtered subset. Run `scripts/filter_pokemon_db.py <regulation_id>` to generate.
+- `data/competitive-truths.md` — User-editable file of known competitive facts (Mega abilities, move restrictions, playstyle rules) that override AI priors during team analysis. Authoritative source for data the DB cannot provide.
+
+**Pokemon DB limitations — important for agents:**
+1. **Move pools are not stored.** The `moves` array is empty (`[]`) for every Pokemon in the DB. The DB stores types, base stats, and abilities only. Do not cite the DB as move legality authority and do not tell users a move is illegal based on the DB.
+2. **Some Champions Mega abilities are missing.** PokeAPI does not have Pokemon Champions Mega data. Any Champions Mega whose base form does not exist in PokeAPI will have `"abilities": []` in the DB. Standard Gen 1–6 Megas (Venusaur-Mega, Alakazam-Mega, etc.) have correct abilities. Use `data/competitive-truths.md` as the override source for missing Mega abilities (e.g., Meganium-Mega's ability is Mega Sol, documented there).
 - `data/meta/<YYYY-MM-DD>_<regulation_id>_report.md` — Meta scouting reports from the Meta Scout agent. Dated to preserve history.
 - `data/teams/drafts/<YYYY-MM-DD>_<regulation_id>_tr_team.md` — Team drafts from the TR Architect agent. Promote a draft to `data/my_team.json` when ready.
 
