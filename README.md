@@ -75,7 +75,7 @@ The skill then synthesizes their outputs into a dated report at `data/meta/`.
 |-------|------|
 | **tr-architect** | Drafts the initial team (Showdown paste + roster breakdown + bring-4s). Called again to revise if critics flag critical issues. |
 | **meta-coverage-checker** | Evaluates the draft against the scouting report — what does this team lose to? |
-| **tr-viability-checker** | Runs the 8 TR composition checks (Taunt / Imprison / Fake Out answers, Plan B, type coverage, spread moves, item diversity) |
+| **tr-viability-checker** | Runs the 9 TR composition checks (Taunt / Imprison / Fake Out answers, Plan B, type coverage, spread moves, item diversity, item legality) |
 | **speed-math-auditor** | Audits EV totals, IVs, natures, and verifies underspeed benchmarks |
 
 The skill fires the three critics in parallel, synthesizes severity-ranked findings, re-spawns `tr-architect` once if there are critical issues, and writes the final draft to `data/teams/drafts/`.
