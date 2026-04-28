@@ -1,7 +1,7 @@
 ---
 title: "fix: Improve review-team skill — inline analysis, completion mode, and competitive truths"
 type: fix
-status: active
+status: completed
 date: 2026-04-28
 ---
 
