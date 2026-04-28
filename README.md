@@ -36,13 +36,23 @@ node bin/cli.mjs uninstall
 # or: npx vgc-download uninstall
 ```
 
+## Updating Skills
+
+After editing any file in `skills/` or `agents/`, reinstall to push the changes to Claude Code:
+
+```bash
+node bin/cli.mjs install
+```
+
+Then restart Claude Code. The install script overwrites `~/.claude/skills/` and `~/.claude/agents/` with the current repo contents.
+
 ## Skills
 
 | Skill | Description |
 |-------|-------------|
 | `/vgc:parse-regulation <url>` | Parse a Serebii regulation page into `data/regulations/` |
 | `/vgc:scout-meta` | Scout the metagame — spawns Meta Scout agent to analyze stats, search the web, and write a scouting report |
-| `/vgc:build-tr-team` | Build a Trick Room team — spawns TR Architect agent to draft a Showdown-pasteable team |
+| `/vgc:build-tr-team [archetype preference]` | Build a Trick Room team — optionally steer the draft with a preference like `"Oranguru setter + Mega Golurk abuser"` |
 
 ## Agents
 
@@ -65,7 +75,7 @@ The skill then synthesizes their outputs into a dated report at `data/meta/`.
 |-------|------|
 | **tr-architect** | Drafts the initial team (Showdown paste + roster breakdown + bring-4s). Called again to revise if critics flag critical issues. |
 | **meta-coverage-checker** | Evaluates the draft against the scouting report — what does this team lose to? |
-| **tr-viability-checker** | Runs the 8 TR composition checks (Taunt / Imprison / Fake Out answers, Plan B, type coverage, spread moves, item diversity) |
+| **tr-viability-checker** | Runs the 9 TR composition checks (Taunt / Imprison / Fake Out answers, Plan B, type coverage, spread moves, item diversity, item legality) |
 | **speed-math-auditor** | Audits EV totals, IVs, natures, and verifies underspeed benchmarks |
 
 The skill fires the three critics in parallel, synthesizes severity-ranked findings, re-spawns `tr-architect` once if there are critical issues, and writes the final draft to `data/teams/drafts/`.

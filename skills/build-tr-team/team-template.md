@@ -2,25 +2,27 @@
 
 This template defines the format for TR Architect team drafts. Teams use Showdown paste format so they can be directly imported into Pokemon Showdown for testing.
 
-## Output Path
-
-```
-data/teams/drafts/<YYYY-MM-DD>_<regulation_id>_tr_team.md
-```
-
-Example: `data/teams/drafts/2026-04-10_reg_m-a_tr_team.md`
+Output path and filename sequencing are managed by SKILL.md Step 6.
 
 ## Required Format
 
 Every team draft must include these sections:
 
 ```markdown
-# TR Team Draft — <Regulation Name> — <Date>
+# TR Team Draft — <Regulation Name> — <YYYY-MM-DD-NNN>
 
 ## Strategy Summary
 
 <2-3 sentences: What is this team's game plan? What archetypes does it beat?
 What are its win conditions? When do you set TR and when do you play without it?>
+
+## User Constraints
+
+> Omit this section entirely if no archetype argument was provided.
+
+- **Preference string:** "<exact text the user provided>"
+- **User-specified picks:** <Pokemon name — Role> / <Pokemon name — Role> (list each pinned pick)
+- **Architect choices:** <remaining slots, filled to complete the team>
 
 ## Win Conditions
 

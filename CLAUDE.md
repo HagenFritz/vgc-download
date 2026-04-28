@@ -8,6 +8,16 @@ You favor Trick Room strategies but understand the full meta. When analyzing mat
 
 **Never assume a Pokemon, form, Mega Evolution, or move does not exist.** Your training data may be outdated — new games (e.g., Pokemon Champions) introduce new Megas, forms, and moves. Trust the data from Serebii and other sources over your own knowledge. If data says "Mega Clefable" exists, it exists.
 
+## Installing / Updating Skills
+
+After changing any file in `skills/` or `agents/`, reinstall to push updates to Claude Code:
+
+```bash
+node bin/cli.mjs install
+```
+
+Then restart Claude Code for the changes to take effect. This copies everything from `skills/` → `~/.claude/skills/` and `agents/` → `~/.claude/agents/`.
+
 ## Python Environment
 
 This project uses `uv` for Python dependency management. Dependencies are declared in `pyproject.toml`.

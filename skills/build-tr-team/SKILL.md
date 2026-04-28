@@ -1,7 +1,7 @@
 ---
 name: vgc:build-tr-team
 description: "Build a Trick Room team for the current VGC regulation. Spawns tr-architect to draft a team, then fires three parallel critics (meta coverage, TR viability, speed math) and revises if needed. Use when the user says 'build a TR team', 'draft a trick room team', or 'build me a team'."
-argument-hint: "[meta report path]"
+argument-hint: "[archetype preference, e.g. 'Oranguru setter + Mega Golurk abuser']"
 ---
 
 # Build a Trick Room Team
@@ -14,7 +14,7 @@ Produce a complete, tournament-viable Trick Room team draft for the current VGC 
 - **Wins without TR.** At least one Pokemon viable outside TR — Tailwind/Icy Wind speed control, or a fast attacker. TR expires; the game doesn't.
 - **Answers the current meta.** Picks aren't generic — they counter the top threats from the scouting report.
 - **Has clean set math.** EVs total ≤508, 0 Spe IVs on abusers, speed tiers actually underspeed the TR mirror.
-- **Passes the 8 composition checks.** Taunt answer, Imprison answer, Fake Out answer, Plan B, type coverage, spread moves, item diversity, reliable TR setup.
+- **Passes the 9 composition checks.** Taunt answer, Imprison answer, Fake Out answer, Plan B, type coverage, spread moves, item diversity, reliable TR setup, item legality.
 
 ## Progress Tracking
 
@@ -41,7 +41,12 @@ Also gather paths for the agents:
 - `data/pokemon_db/<current_regulation>_pokemon.json` — base stats, types, abilities
 - `data/stats/items/champions_items.json` — legal Champions items list (117 items). Pass this path to all agents.
 
+**Capture the archetype argument (if provided):**
+If the user supplied an archetype preference argument, capture it as `<user_archetype_preference>`. Expected format: `"<Pokemon> <role> + <Pokemon> <role>"` (e.g., `"Oranguru setter + Mega Golurk abuser"`). Free-text descriptions are also valid — tr-architect will interpret them, but may make more role assumptions. If no argument was given, `<user_archetype_preference>` is absent — omit the `User Archetype Preference:` field from all Task prompts below.
+
 ### Step 2: Spawn tr-architect for Initial Draft
+
+If `<user_archetype_preference>` was provided, confirm it back to the user before proceeding: "Archetype preference captured: `<user_archetype_preference>`. Building around these picks..." This catches misunderstandings before the pipeline runs.
 
 Fire the builder. Pass the meta report path and all data paths as context.
 
@@ -54,6 +59,7 @@ Task vgc-download:coaching:tr-architect(
   Regulation file: data/regulations/<current_regulation>.json
   Pokemon DB: data/pokemon_db/<current_regulation>_pokemon.json
   Legal items: data/stats/items/champions_items.json
+  User Archetype Preference: <user_archetype_preference>  ← include this line only when provided; omit entirely if absent
 
   Requirements:
   - 6 Pokemon, all from regulation's allowed_pokemon list
@@ -123,11 +129,13 @@ Wait for all three to complete before proceeding.
 
 Consolidate all findings into a severity-ranked list:
 
-- **🔴 CRITICAL** — team autoloses to a top meta threat, has no Taunt/Imprison/Fake Out answer, all 6 Pokemon are slow (no Plan B), 3+ stacked type weaknesses, duplicate items, illegal items (not in champions_items.json), or EV math errors that make a set illegal
-- **🟡 IMPORTANT** — uncomfortable matchups, weak Plan B, missing spread move coverage, suboptimal EV benchmarks (underspeed margin too tight)
+- **🔴 CRITICAL** — structural failure that costs games: autolose to a top meta threat, missing answer to a common denial move, no Plan B, illegal items or EV math errors
+- **🟡 IMPORTANT** — uncomfortable matchups, weak Plan B, missing spread coverage, tight underspeed margins
 - **🔵 POLISH** — spread refinements, item reshuffles, cosmetic improvements
 
 Walk each finding and ask: does this change the team's tournament viability? If yes → CRITICAL or IMPORTANT. If no → POLISH.
+
+**Pinned-pick findings:** If a CRITICAL finding targets a user-specified pick (identifiable from the `## User Constraints` section of the draft), downgrade it to IMPORTANT and note it as a known tradeoff of the user's preference. Do not trigger a revision pass solely for weaknesses inherent to pinned picks — the revision agent cannot replace them anyway.
 
 Dedupe overlapping findings (e.g., tr-viability-checker and meta-coverage-checker both flagging "no Taunt answer" count as one CRITICAL, not two).
 
@@ -147,10 +155,12 @@ Task vgc-download:coaching:tr-architect(
   Important findings to consider:
   <paste IMPORTANT findings>
 
+  User Archetype Preference: <user_archetype_preference>  ← include this line only when provided; omit entirely if absent
+
   Constraints:
-  - Still 6 Pokemon from the regulation's allowed_pokemon list
   - Preserve win conditions and strategic identity where possible
   - Every pick and set change must address a specific finding
+  - User-specified picks (from archetype preference, if any) are soft preferences — work around them (adjust teammates, items, EV spreads, bring-4 guidelines) rather than replacing them. Surface their known weaknesses in the Threats and Weaknesses section explicitly.
 
   Return the revised team in the same Showdown paste + roster breakdown + win conditions format.
 )
@@ -164,15 +174,19 @@ Wait for the revision. Do NOT re-run critics — one revision pass is the limit.
 
 ### Step 6: Write Final Draft to Disk
 
-Create the output path if needed:
+Create the output path and determine the daily sequence number:
 ```bash
 mkdir -p data/teams/drafts
+today=$(date +%Y-%m-%d)
+last_seq=$(ls data/teams/drafts/${today}-*_tr_team.md 2>/dev/null | grep -oP "${today}-\K\d{3}" | sort -n | tail -1)
+next_seq=$(printf "%03d" $(( ${last_seq:-0} + 1 )))
 ```
 
 Write the final (revised or original) draft to:
 ```
-data/teams/drafts/<YYYY-MM-DD>_<regulation_id>_tr_team.md
+data/teams/drafts/<YYYY-MM-DD>-<NNN>_<regulation_id>_tr_team.md
 ```
+Where `NNN` is `$next_seq` from the command above (e.g., `2026-04-27-001_reg_m-a_tr_team.md`).
 
 Follow the [team template](team-template.md) exactly. Append a new section at the end titled **## Critique & Revisions** with:
 - Summary of findings from each critic (one paragraph each)
@@ -185,6 +199,7 @@ Confirm to the user with:
 - Top 3 win conditions
 - Headline matchup (best and worst)
 - Whether revision was triggered
+- User-specified picks vs. architect picks (only when `<user_archetype_preference>` was provided)
 
 ## Rules
 
