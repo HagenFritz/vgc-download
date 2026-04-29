@@ -11,7 +11,7 @@ Evaluate an existing team — full, draft, or partial — against the current me
 ## What Makes a Good Team Review
 
 - **Matchup-first.** Know where the team wins and loses before suggesting changes.
-- **Concrete threats, not type charts.** Name the Pokemon, the move, and the interaction — not just "weak to Fire."
+- **Concrete threats, not vague type flags.** Name the Pokemon, the move, and the interaction — "Landorus-T Ground slide hits Incineroar, Heatran, and Urshifu for 2x" not just "weak to Ground."
 - **Grounded improvements.** Every suggestion is validated against legal Pokemon, legal items, and real move pools.
 - **Draft-aware.** A team with missing items or EVs gets completion suggestions, not error flags.
 - **Partial-team aware.** A 3-Pokemon skeleton gets additions, not substitutions.
@@ -22,10 +22,11 @@ Before starting, use `TaskList` to find any lingering tasks and delete them with
 
 1. "Validate input and load data" (activeForm: "Validating team file and loading data...")
 2. "Assess team completeness" (activeForm: "Checking team completeness...")
-3. "Load competitive truths" (activeForm: "Loading competitive truths...")
-4. "Analyze meta coverage" (activeForm: "Analyzing meta coverage...")
-5. "Generate improvement suggestions" (activeForm: "Generating improvements...")
-6. "Write report to disk" (activeForm: "Writing review report...")
+3. "Load competitive truths and type chart" (activeForm: "Loading competitive truths and type chart...")
+4. "Compute type coverage profile" (activeForm: "Computing type coverage profile...")
+5. "Analyze meta coverage" (activeForm: "Analyzing meta coverage...")
+6. "Generate improvement suggestions" (activeForm: "Generating improvements...")
+7. "Write report to disk" (activeForm: "Writing review report...")
 
 ## Methodology
 
@@ -54,6 +55,7 @@ Resolve all data paths and read them now:
 - `data/regulations/<current_regulation>.json` — allowed Pokemon list
 - `data/pokemon_db/<current_regulation>_pokemon.json` — base stats, types, abilities
 - `data/stats/items/champions_items.json` — legal Champions items list
+- `data/type-chart.json` — complete offensive/defensive type multiplier table
 - The team file itself — read the full contents
 
 Read the meta scouting report in full.
@@ -110,6 +112,35 @@ Note that you have loaded the truths file (or that it was not found) so the user
 Competitive truths: loaded (or "not found — using defaults")
 ```
 
+### Step 4b: Compute Type Coverage Profile
+
+Using the types loaded from the Pokemon DB for each team member, and the multiplier table from `data/type-chart.json`, mechanically compute the team's type coverage profile.
+
+For each of the 18 attacking types, multiply the defensive multipliers across all team members' type combinations to determine how many Pokemon take super-effective (≥2x) damage from that type.
+
+**Dual-type interaction rule:** For a dual-type Pokemon, multiply the two base defensive multipliers together:
+- Example: Incineroar (Fire/Dark) vs Ground → Fire: 1x Ground, Dark: 1x Ground → 1x total (neutral)
+- Example: Incineroar (Fire/Dark) vs Water → Fire: 2x Water, Dark: 1x Water → 2x total
+- Example: Meganium-Mega (Grass/Fairy) vs Poison → Grass: 2x Poison, Fairy: 2x Poison → 4x total
+- Immunities (0x) always win — anything × 0 = 0
+
+**Output a type coverage table** before proceeding to Step 5:
+
+```
+Type Coverage Profile — [Team Name / File]
+
+Attacking Type | Pokemon hit SE (≥2x) | Count | Notes
+---------------|----------------------|-------|------
+Fire           | [Pokemon A], [B]     | 2     |
+Water          | [Pokemon C]          | 1     |
+Ground         | [Pokemon A], [B], [C]| 3     | ⚠️ 3+ members — exploitable
+...
+```
+
+Flag any attacking type that hits **3 or more** team members for ≥2x with ⚠️. These are the type weaknesses that will drive the Type Vulnerability Audit in Step 5.
+
+Also note **4x weaknesses** (double-weakness from dual typing) — these are priority targets even if only 1-2 Pokemon share them.
+
 ### Step 5: Inline Meta Coverage Analysis
 
 You are now Claude operating in the main conversation context. Perform the full meta coverage analysis by reading the scouting report and team data you have already loaded. Do not spawn agents.
@@ -143,9 +174,11 @@ For each dominant archetype in the meta report, assess the matchup:
 
 #### Type Vulnerability Audit
 
-List types that hit 3 or more team members super-effectively:
+Pull directly from the type coverage profile computed in Step 4b. Report every attacking type that hit 3+ team members for ≥2x, plus any 4x weaknesses regardless of count:
 
-- **[Type]** — hits [Pokemon A], [Pokemon B], [Pokemon C] super-effectively. [Note on whether this creates a practical exploitation risk given the meta.]
+- **[Type]** (hits [N] members) — [Pokemon A] (2x), [Pokemon B] (2x), [Pokemon C] (4x). [Is this type well-represented in the current meta? Name the specific threats that carry it — e.g., "Landorus-T is a top-5 threat and runs Earthquake, making this a real liability."]
+
+If no type hits 3+ members, say so explicitly — that's a good sign worth calling out.
 
 #### Structural Gaps
 
