@@ -2,6 +2,61 @@
 
 Deep reference material for building Trick Room teams in VGC Doubles. This supplements the core theory in SKILL.md with detailed competitive knowledge sourced from VGCGuide (Wolfe Glick), Smogon, Nugget Bridge, and Pikalytics.
 
+**Read the Hard Rules section first.** Before suggesting any Pokemon, item, or move, verify it against the rules below. Violating these rules produces suggestions that cannot be used in actual play.
+
+## Hard Rules — What NOT to Suggest
+
+These are non-negotiable constraints. Any suggestion that violates them is invalid regardless of how strong it looks competitively.
+
+### 1. Illegal Items (not in champions_items.json)
+
+Never suggest these items — they do not exist in Pokemon Champions:
+
+- **Life Orb** — Not legal. Use type boosters instead: Twisted Spoon (Psychic), Black Belt (Fighting), Charcoal (Fire), Mystic Water (Water), Magnet (Electric), Miracle Seed (Grass), Never-Melt Ice (Ice), Sharp Beak (Flying), Poison Barb (Poison), Soft Sand (Ground), Hard Stone (Rock), Silver Powder (Bug), Spell Tag (Ghost), Dragon Fang (Dragon), Dread Plate alternative (Dark), Iron Plate alternative (Steel).
+- **Flame Orb** — Not legal. No substitute — Guts activation is not viable in Champions.
+- **Toxic Orb** — Not legal. No substitute — Poison Heal activation is not viable in Champions.
+- **Choice Scarf** — Not legal. Speed control must come from Tailwind, Icy Wind, Trick Room, or base speed.
+
+**Always load `data/stats/items/champions_items.json` and verify every item by exact name before finalizing a set.**
+
+### 2. Dead Ability + Item Combos
+
+Never suggest these as a damage or recovery strategy:
+
+- **Guts** (Conkeldurr, Hariyama, etc.) — Guts requires a status condition to boost Attack. With no Flame Orb or Toxic Orb legal in Champions, Guts is flavor-only. Use Drain Punch for sustain (Conkeldurr) or Thick Fat (Hariyama) for defensive utility instead.
+- **Poison Heal** (Breloom, Gliscor, etc.) — Poison Heal requires Toxic Orb to activate. Not viable. Use Technician or Mold Breaker instead on relevant Pokemon.
+- Any ability that requires a status orb to function as intended — those orbs do not exist in Champions.
+
+### 3. Move Pool Hallucinations
+
+Never recommend a move a Pokemon cannot legally learn. This is the most common agent error.
+
+- Always verify moves against `data/pokemon_db/<regulation_id>_pokemon.json` before suggesting them.
+- Do not assume a Pokemon has a coverage move because it "makes sense" — check the actual move pool.
+- If a move is not in the Pokemon DB, suggest the best legal alternative from the DB instead.
+
+### 4. Speed Tie Strategies
+
+Never suggest running neutral Speed nature or specific Speed EVs to "tie" with a specific threat as a plan. Speed ties resolve 50/50 each turn — they are unreliable at tournament level and will lose you games at the worst time. If you want to outspeed something, commit to it with a Speed-boosting nature and EVs. If you want to underspeed something under TR, commit to 0 IVs + Speed-hindering nature.
+
+### 5. Single-Setter No-Plan-B Teams
+
+Never recommend a team with only one Trick Room setter and no viable fast mode. This team loses automatically when:
+- The setter is KO'd before TR goes up
+- Taunt denies TR and Mental Herb has been used
+- The opponent runs Imprison + Trick Room
+
+Every team needs either: (a) two setters, or (b) at least two Pokemon that are fully viable outside Trick Room (e.g., Tailwind users, Icy Wind support, fast attackers that can operate at normal speed).
+
+### 6. Non-Regulation Pokemon
+
+Never suggest a Pokemon without first confirming it appears in the regulation's `allowed_pokemon` list. Do not rely on memory — regulations change, and Pokemon that were legal in a prior regulation may be banned or unavailable.
+
+- Load `data/regulations/<regulation_id>.json` and check `allowed_pokemon` before recommending any pick.
+- If a Pokemon is not in the list, find the closest legal alternative that fills the same role.
+
+---
+
 ## Why Trick Room Is Strong
 
 - TR has won 7 of 12 VGC World Championships — historically the most successful macro-strategy in the format.
